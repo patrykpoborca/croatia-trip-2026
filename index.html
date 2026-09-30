@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Split → Plitvice → Omiš → Hvar → Dubrovnik → Mostar: day-by-day plan, map, travel times and places to stay." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Croatia + Herzegovina · Oct 9–19" />
+  <meta property="og:description" content="Split → Plitvice → Omiš → Hvar → Dubrovnik → Mostar: day-by-day plan, map, travel times and places to stay." />
+  <meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/City_walls_of_Dubrovnik_05.jpg/1280px-City_walls_of_Dubrovnik_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#111411" />
+  <title>Croatia + Herzegovina Trip Plan | Oct 9–19</title>
+  <style>
+    :root {
+      --bg: #111411;
+      --panel: #1b211c;
+      --panel-2: #232b24;
+      --ink: #f4efe4;
+      --muted: #bcb4a4;
+      --faint: #807768;
+      --accent: #d46a4c;
+      --accent-2: #87a96b;
+      --blue: #6ba6b8;
+      --gold: #d9a441;
+      --lav: #a88ec9;
+      --line: rgba(244,239,228,.13);
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 10% 0%, rgba(212,106,76,.15), transparent 35%),
+                  radial-gradient(circle at 90% 20%, rgba(107,166,184,.12), transparent 30%),
+                  var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    a { color: var(--ink); text-decoration-color: rgba(212,106,76,.8); text-underline-offset: 3px; }
+    .deck-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 12px 18px;
+      background: rgba(17,20,17,.86);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+    .deck-nav a {
+      white-space: nowrap;
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+    .deck-nav a:hover { color: var(--ink); border-color: rgba(212,106,76,.5); }
+    .slide {
+      min-height: 100vh;
+      padding: 72px clamp(22px, 5vw, 78px);
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .slide-inner { width: 100%; max-width: 1240px; margin: 0 auto; }
+    .eyebrow {
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.02; letter-spacing: -.04em; }
+    h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(54px, 9vw, 118px); max-width: 980px; }
+    h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(40px, 6vw, 76px); margin-bottom: 22px; }
+    h3 { font-size: 24px; margin-bottom: 12px; letter-spacing: -.02em; }
+    p.lede { color: var(--muted); font-size: clamp(19px, 2vw, 26px); max-width: 920px; margin: 26px 0 0; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 13px;
+      color: var(--muted);
+      background: rgba(255,255,255,.03);
+      font-size: 14px;
+    }
+    .grid { display: grid; gap: 18px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .card.compact { padding: 18px; border-radius: 22px; box-shadow: none; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      padding: 6px 9px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      background: rgba(212,106,76,.18);
+      border: 1px solid rgba(212,106,76,.38);
+    }
+    .tag.nature { background: rgba(135,169,107,.17); border-color: rgba(135,169,107,.4); }
+    .tag.culture { background: rgba(217,164,65,.16); border-color: rgba(217,164,65,.38); }
+    .tag.relax { background: rgba(107,166,184,.16); border-color: rgba(107,166,184,.38); }
+    .tag.alt { background: rgba(168,142,201,.16); border-color: rgba(168,142,201,.38); }
+    .small { color: var(--muted); font-size: 15px; }
+    .tiny { color: var(--faint); font-size: 12px; }
+    .route {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0,1fr));
+      gap: 10px;
+      align-items: stretch;
+      margin-top: 34px;
+    }
+    .route-step {
+      position: relative;
+      padding: 20px 16px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      min-height: 126px;
+    }
+    .route-step strong { display:block; font-size: 20px; margin-bottom: 8px; }
+    .route-step span { color: var(--muted); font-size: 13px; }
+    .mix-bars { display: grid; gap: 13px; margin-top: 28px; }
+    .bar { display:grid; grid-template-columns: 180px 1fr 70px; align-items:center; gap:14px; }
+    .bar-track { height: 14px; border-radius: 99px; background: rgba(255,255,255,.08); overflow:hidden; }
+    .bar-fill { height: 100%; border-radius: 99px; background: var(--accent); }
+    .bar:nth-child(2) .bar-fill { background: var(--accent-2); }
+    .bar:nth-child(3) .bar-fill { background: var(--gold); }
+    .bar:nth-child(4) .bar-fill { background: var(--blue); }
+    .day-title { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; margin-bottom:24px; }
+    .day-title .date { color: var(--accent); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:14px; }
+    .day-title .sleep { color: var(--muted); text-align:right; }
+    .poi-list { display:grid; gap: 12px; margin-top:16px; }
+    .poi { border-top:1px solid var(--line); padding-top:12px; }
+    .poi strong { display:block; margin-bottom:3px; }
+    .poi em { color: var(--muted); font-style:normal; }
+    .option-matrix { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:16px; margin-top:18px; }
+    .option { padding: 16px; border-radius: 20px; background: rgba(0,0,0,.18); border: 1px solid var(--line); }
+    .option b { display:block; margin-bottom: 5px; color: var(--ink); }
+    .icon { font-size: 26px; margin-bottom: 8px; display:block; }
+    table { width:100%; border-collapse: collapse; overflow:hidden; border-radius: 22px; border:1px solid var(--line); }
+    th, td { padding: 13px 14px; border-bottom:1px solid var(--line); vertical-align: top; text-align:left; }
+    th { color: var(--ink); background: rgba(255,255,255,.06); font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+    td { color: var(--muted); }
+    td strong { color: var(--ink); }
+    tr:last-child td { border-bottom:0; }
+    .source-list { columns: 2; column-gap: 28px; color: var(--muted); font-size: 14px; }
+    .source-list li { break-inside: avoid; margin: 0 0 10px; }
+    .print-note { display:none; }
+    .travel { display:flex; flex-wrap:wrap; gap:8px; margin: -8px 0 22px; }
+    .travel span { font-size: 13px; color: var(--ink); padding: 6px 11px; border-radius: 999px; background: rgba(107,166,184,.14); border: 1px solid rgba(107,166,184,.35); }
+    #tripmap { height: 620px; border-radius: var(--radius); border: 1px solid var(--line); overflow: hidden; background: var(--panel); }
+    .map-layers { display:flex; flex-wrap:wrap; gap:8px; margin: 16px 0; }
+    .map-layers button { font: inherit; font-size: 13px; color: var(--ink); background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 999px; padding: 6px 11px; cursor: pointer; }
+    .map-layers button.off { opacity: .4; }
+    .map-layers i { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; vertical-align:middle; }
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel-2) !important; color: var(--ink) !important; }
+    .leaflet-popup-content { font-size: 13px; line-height: 1.4; }
+    .leaflet-popup-content b { font-size: 14px; }
+    .leaflet-popup-content a { color: var(--gold); }
+    .btn { display:inline-block; padding: 10px 16px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; margin: 4px 8px 4px 0; }
+    .btn.ghost { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+    .stay { margin-bottom: 26px; }
+    .stay-head { display:flex; flex-wrap:wrap; align-items:baseline; gap: 10px 18px; margin-bottom: 10px; }
+    .stay-head h3 { margin: 0; }
+    .stay-list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+    .stay-list li { display:grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: baseline; font-size: 14px; border-top: 1px solid var(--line); padding-top: 6px; }
+    .stay-list .sc { color: var(--muted); font-size: 12px; white-space: nowrap; }
+    .stay-list .pr { color: var(--gold); font-weight: 700; white-space: nowrap; }
+    .walk { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .tier { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-left: 6px; }
+    td a { color: var(--ink); }
+    @media (max-width: 900px) {
+      .slide { min-height: auto; padding: 56px 18px; }
+      .grid-2, .grid-3, .grid-4, .option-matrix, .route { grid-template-columns: 1fr; }
+      .bar { grid-template-columns: 1fr; gap: 6px; }
+      .source-list { columns: 1; }
+      .day-title { flex-direction:column; }
+      .day-title .sleep { text-align:left; }
+    }
+    @media (max-width: 700px) {
+      h1 { font-size: 46px; } h2 { font-size: 34px; }
+      p.lede { font-size: 17px; }
+      .card { padding: 18px; border-radius: 20px; }
+      table, tbody, tr, td { display: block; width: 100%; }
+      table { border: 0; }
+      thead { display: none; }
+      tr { border: 1px solid var(--line); border-radius: 16px; margin-bottom: 10px; padding: 8px 12px; background: rgba(255,255,255,.03); }
+      td { border: 0; padding: 4px 0; }
+      td[data-label]:not(:first-child)::before { content: attr(data-label); display: block; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+      td:empty { display: none; }
+      #tripmap { height: 420px; }
+      .stay-list li { grid-template-columns: 1fr auto; }
+      .stay-list .sc { grid-column: 1; grid-row: 2; }
+      .stay-list .pr { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+      .btn { padding: 9px 13px; font-size: 13px; }
+      .travel span, .travel a { font-size: 12px !important; }
+      .source-list { padding-left: 18px; }
+    }
+    @media print {
+      body { background: white; color:#111; }
+      .deck-nav { display:none; }
+      .slide { min-height: auto; page-break-after: always; border-bottom:0; padding: 32px; }
+      .card, .route-step, .option { box-shadow:none; background:#fff; border-color:#ccc; }
+      h1,h2,h3,td strong { color:#111; }
+      .small, .tiny, td { color:#333; }
+      .print-note { display:block; }
+      a { color:#111; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="deck-nav">
+    <a href="#cover">Cover</a><a href="#route">Route</a><a href="#mix">Trip Mix</a><a href="activities.html" style="color:var(--ink);border-color:rgba(212,106,76,.6)">✨ Activity explorer</a><a href="#summary">Itinerary</a><a href="#map">Map</a><a href="#travel">Travel Times</a><a href="#stays">Stays</a><a href="#logistics">Logistics</a>
+    <a href="#split">Split</a><a href="#plitvice">Plitvice</a><a href="#return">Return South</a><a href="#omis">Omiš</a>
+    <a href="#hvar1">Hvar Arrival</a><a href="#hvar2">Hvar Island</a><a href="#dub1">Dubrovnik Arrival</a><a href="#dub2">Dubrovnik Full Day</a><a href="#bosnia">Bosnia</a><a href="#depart">Departure</a><a href="#sources">Sources</a>
+  </nav>
+
+  <section id="cover" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Croatia + Herzegovina • October 9–19</div>
+      <h1>Adriatic, canyons, islands & old cities</h1>
+      <p class="lede">A review deck for a couples trip built around adventure, natural wonders, culture, and a little luxury—without over-cramming mid-October travel.</p>
+      <div class="meta-row">
+        <span class="pill">Primary route: Split → Plitvice → Omiš → Hvar → Dubrovnik → Mostar</span>
+        <span class="pill">Best airport pattern: into Split, out of Dubrovnik</span>
+        <span class="pill">Style: active, scenic, flexible</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="route" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Route logic</div>
+      <h2>Compact geography, high variety</h2>
+      <p class="lede">This route avoids the classic mistake of trying to include Slovenia, Montenegro, Bosnia, every island, and every waterfall park in one short trip.</p>
+      <div class="route">
+        <div class="route-step"><strong>Split</strong><span>Roman palace core, old-town evenings, Marjan views.</span></div>
+        <div class="route-step"><strong>Plitvice</strong><span>Signature waterfall-boardwalk landscape and autumn foliage.</span></div>
+        <div class="route-step"><strong>Omiš</strong><span>Cetina canyon rafting, zipline, canyoning, fort hikes.</span></div>
+        <div class="route-step"><strong>Hvar</strong><span>Island reset: coastline, villages, wine, Fortica, optional boat/kayak.</span></div>
+        <div class="route-step"><strong>Dubrovnik</strong><span>Walls, Srđ, Lokrum, kayak, old city atmosphere.</span></div>
+        <div class="route-step"><strong>Mostar</strong><span>Herzegovina culture shift with Kravica, Počitelj, Blagaj options.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mix" class="slide">
+    <div class="slide-inner grid grid-2">
+      <div>
+        <div class="eyebrow">Target balance</div>
+        <h2>Built around your usual travel mix</h2>
+        <p class="lede">Most days deliberately overlap categories, so a “culture day” can still include a hike or kayak and a “nature day” can still include a town or fortress.</p>
+      </div>
+      <div class="card">
+        <div class="mix-bars">
+          <div class="bar"><strong>Adventure</strong><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div><span>~30%</span></div>
+          <div class="bar"><strong>Nature</strong><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div><span>~30%</span></div>
+          <div class="bar"><strong>Culture</strong><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span>~20%</span></div>
+          <div class="bar"><strong>Relax/luxury</strong><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span>~20%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="summary" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">At-a-glance itinerary</div>
+      <h2>Daily anchor plan</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Sleep</th><th>Primary anchor</th><th>Best alternates</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Oct 9</strong></td><td>Flight</td><td>Travel to Croatia.</td><td>Prefer arriving Split rather than Zagreb if routing works.</td></tr>
+          <tr><td><strong>Oct 10</strong></td><td>Split</td><td>Diocletian’s Palace, Old Town, Marjan.</td><td>Salona, Riva evening, museum/rain plan.</td></tr>
+          <tr><td><strong>Oct 11</strong></td><td>Plitvice area</td><td>Plitvice Program H or C.</td><td>Program K, Rastoke, Barać Caves.</td></tr>
+          <tr><td><strong>Oct 12</strong></td><td>Split</td><td>Drive south with Klis Fortress or Trogir.</td><td>Salona, Šibenik, easier Split evening.</td></tr>
+          <tr><td><strong>Oct 13</strong></td><td>Split</td><td>Omiš/Cetina rafting, zipline or canyoning.</td><td>Fortica hike, Mirabela, Biokovo Skywalk.</td></tr>
+          <tr><td><strong>Oct 14</strong></td><td>Hvar</td><td>Hvar Town, Fortica, waterfront, luxury reset.</td><td>Pakleni Islands, beach walk, wine/spa.</td></tr>
+          <tr><td><strong>Oct 15</strong></td><td>Hvar</td><td>Island loop: Dubovica, Stari Grad, Vrboska.</td><td>Sveta Nedjelja climbing/via ferrata, Pakleni, village hikes.</td></tr>
+          <tr><td><strong>Oct 16</strong></td><td>Dubrovnik</td><td>Ferry to Dubrovnik, Old Town orientation, Mount Srđ.</td><td>Move Srđ to Oct 17 if ferry/weather delays.</td></tr>
+          <tr><td><strong>Oct 17</strong></td><td>Dubrovnik</td><td>City Walls, Fort Lovrijenac, Lokrum or kayak.</td><td>Trsteno Arboretum, museums, cable car fallback.</td></tr>
+          <tr><td><strong>Oct 18</strong></td><td>Dubrovnik</td><td>Mostar + Kravica + Počitelj.</td><td>Blagaj, or swap for Kotor if you want another adventure day.</td></tr>
+          <tr><td><strong>Oct 19</strong></td><td>Home</td><td>Departure.</td><td>Cavtat if flight is late.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="map" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Trip map</div>
+      <h2>Every pin, day by day</h2>
+      <p class="small">Tap a pin for notes + directions. Toggle days below. Pins marked <em>[added]</em> are extras beyond the original plan.</p>
+      <div>
+        <a class="btn" id="mymaps-link" href="https://www.google.com/maps/d/viewer?mid=1yUbxH1WsKn1VRWtUixB0FTRgiQKhnlY" target="_blank" rel="noopener">Open Google My Maps version</a>
+        <a class="btn ghost" href="croatia_trip.kml" download>Download KML</a>
+      </div>
+      <div class="map-layers" id="map-layers"></div>
+      <div id="tripmap"></div>
+    </div>
+  </section>
+
+  <section id="travel" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Getting between places</div>
+      <h2>Travel times by leg</h2>
+      <p class="small">Drive times from Google Maps (checked Sept 30, typical traffic). Ferry times are published crossing times — verify October timetables before booking.</p>
+      <table id="legs-table">
+        <thead><tr><th>Date</th><th></th><th>From → To</th><th>Time</th><th>Dist.</th><th>Notes</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="tiny" style="margin-top:14px">Total driving ≈ 13 h across the trip; biggest days are Oct 11 (2.5 h) and Oct 18 (~6 h round trip incl. borders).</p>
+    </div>
+  </section>
+
+  <section id="stays" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Where to sleep</div>
+      <h2>Stays by leg</h2>
+      <p class="small">All links pre-fill dates and 2 adults. Prices are the <strong>total for the stay</strong> as listed on Sept 30 (USD, may exclude taxes) — they'll move. Scores are Booking /10 and Airbnb /5 with review counts. 🚶 walk times are estimated from each listing's map pin (straight line × 1.3); Airbnb pins are approximate until you book.</p>
+      <div id="stays-list"></div>
+    </div>
+  </section>
+
+  <section id="logistics" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Things to lock in</div>
+      <h2>Logistics checklist</h2>
+      <div class="grid grid-2">
+        <div class="card"><span class="tag">Car</span><h3>Rental: Oct 11 → Oct 12 (or 13)</h3><p class="small">Pick up the morning of Oct 11 (Split's Old Town is car-free, so skip it on arrival night). Return it when you get back on Oct 12 and use a rafting operator's Split pickup on Oct 13 — or keep it through Oct 13 if you want Biokovo, and book a place with parking. Rent a second car in Dubrovnik just for Oct 18 — or book a private driver for Mostar (no border paperwork, ~€300–400 for two). If self-driving into Bosnia, ask the rental company for the cross-border "green card".</p></div>
+        <div class="card"><span class="tag relax">Ferries</span><h3>Split → Hvar, Hvar → Dubrovnik</h3><p class="small">Split–Hvar catamarans run daily year-round (~1 h). Hvar–Dubrovnik is the fragile leg in mid-October: book as soon as TP Line / Kapetan Luka publish dates, and keep the Split-ferry-plus-bus backup in mind.</p></div>
+        <div class="card"><span class="tag nature">Timed tickets</span><h3>Plitvice & Dubrovnik Walls</h3><p class="small">Plitvice sells timed-entry tickets online — book the 8:00 slot. Walls tickets are bought on the day; the Dubrovnik Pass bundles walls + Lovrijenac + museums + buses.</p></div>
+        <div class="card"><span class="tag alt">Season</span><h3>Shoulder-season closures</h3><p class="small">Mid-October is the tail of the season: some Hvar hotels, beach bars and Pakleni taxi boats wind down around Oct 15–20. Cetina rafting and Omiš zipline usually run through October but confirm. Sea ~20 °C — swimming is still possible on sunny days.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="split" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Sat Oct 10 • Sleep Split</div><h2>Split: Roman core + soft landing</h2></div><div class="sleep">Goal: culture without burning energy</div></div>
+      <div class="travel"><a href="activities.html#oct10" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>✈️ Split Airport → Old Town · 35 min / 24 km</span><span>🚶 Palace → Vidilica viewpoint · 15 min</span><span>🚶 Old Town → Telegrin summit · ~1 h</span></div>
+      <div class="grid grid-3">
+        <div class="card"><span class="tag culture">Primary</span><h3>Diocletian’s Palace</h3><p class="small">Treat it as a living neighborhood, not one monument: Peristyle, cellars, Vestibule, cathedral/bell tower, Golden Gate and alley wandering.</p></div>
+        <div class="card"><span class="tag nature">Nature add-on</span><h3>Marjan Forest Park</h3><p class="small">Best arrival-day nature option: easy walking, views over Split and islands, flexible length if jet-lagged.</p></div>
+        <div class="card"><span class="tag alt">Alternates</span><h3>Salona / Riva / museums</h3><p class="small">Salona if you want Roman archaeology; Riva and Palace at night if tired; museums/cellars if raining.</p></div>
+      </div>
+      <div class="option-matrix">
+        <div class="option"><b>High energy</b><span class="small">Palace + bell tower + full Marjan loop.</span></div>
+        <div class="option"><b>Medium energy</b><span class="small">Palace + Riva + short Marjan viewpoint.</span></div>
+        <div class="option"><b>Low energy</b><span class="small">Old Town dinner, Peristyle at night, early sleep.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plitvice" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Sun Oct 11 • Sleep Plitvice area</div><h2>Plitvice Lakes: the non-negotiable nature day</h2></div><div class="sleep">Goal: autumn waterfalls + boardwalks</div></div>
+      <div class="travel"><a href="activities.html#oct11" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚗 Split → Plitvice · 2 h 29 min / 241 km</span><span>⏰ Leave 7:00, book 8:00–9:00 entry</span><span>🚗 Plitvice → Rastoke · ~30 min</span></div>
+      <div class="grid grid-2">
+        <div class="card"><span class="tag nature">Primary</span><h3>Program H</h3><p class="small">Best balance: Upper Lakes, Lower Lakes, Kozjak boat crossing, canyon and Great Waterfall without turning the day into an endurance event.</p><div class="poi-list"><div class="poi"><strong>Why it wins</strong><em>It captures the full park experience in roughly a half-day to full-day block.</em></div></div></div>
+        <div class="card"><span class="tag alt">Options nearby</span><div class="poi-list"><div class="poi"><strong>Program K</strong><em>Ambitious full walking route if the weather is perfect.</em></div><div class="poi"><strong>Program C</strong><em>Rain/energy fallback that still hits Upper + Lower Lakes.</em></div><div class="poi"><strong>Rastoke</strong><em>Pretty waterfall village stop, best as a short add-on.</em></div><div class="poi"><strong>Barać Caves</strong><em>Useful bad-weather cave/nature fallback.</em></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="return" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Mon Oct 12 • Sleep Split</div><h2>Return south: choose one smart POI</h2></div><div class="sleep">Goal: make the drive useful</div></div>
+      <div class="travel"><a href="activities.html#oct12" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚗 Plitvice → Klis · 2 h 18 min / 230 km</span><span>🚗 Klis → Split · 20 min</span><span>🚗 Trogir → Split · 35 min</span></div>
+      <div class="grid grid-3">
+        <div class="card"><span class="tag culture">Primary if clear</span><h3>Klis Fortress</h3><p class="small">Dramatic fortress above Split with coastline/island views. Best if you want history plus scenery with minimal route disruption.</p></div>
+        <div class="card"><span class="tag culture">Primary if romantic</span><h3>Trogir</h3><p class="small">Compact UNESCO old town with cathedral, waterfront and Kamerlengo Fortress. Better for wandering/lunch than hiking.</p></div>
+        <div class="card"><span class="tag alt">Other swaps</span><h3>Salona or Šibenik</h3><p class="small">Salona pairs well with Split's Roman story; Šibenik is prettier but adds more detour friction.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="omis" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Tue Oct 13 • Sleep Split</div><h2>Omiš & Cetina Canyon: the adventure anchor</h2></div><div class="sleep">Goal: make this the highest-adrenaline day</div></div>
+      <div class="travel"><a href="activities.html#oct13" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚗 Split → Omiš · 41 min / 25 km</span><span>🚣 Rafting · 3–4 h door-to-door</span><span>🚗 Omiš → Biokovo Skywalk · ~1 h 15</span></div>
+      <div class="grid grid-4">
+        <div class="card compact"><span class="icon">🚣</span><span class="tag">Adventure</span><h3>Cetina rafting</h3><p class="small">Most reliable adventure format: scenic canyon, rapids, swimming/calm sections, half-day footprint.</p></div>
+        <div class="card compact"><span class="icon">🧗</span><span class="tag">Adventure</span><h3>Canyoning</h3><p class="small">Most memorable if operating: swimming, scrambling, jumps/rappels depending on level.</p></div>
+        <div class="card compact"><span class="icon">🪂</span><span class="tag">Adventure</span><h3>Zipline</h3><p class="small">Great pairing with rafting; high canyon views without technical skill.</p></div>
+        <div class="card compact"><span class="icon">🏰</span><span class="tag nature">Hike</span><h3>Fortica / Mirabela</h3><p class="small">Mirabela is easy from town; Fortica is the better real hike and viewpoint.</p></div>
+      </div>
+      <div class="card" style="margin-top:18px"><span class="tag alt">Weather / season backup</span><h3>Biokovo Nature Park + Skywalk</h3><p class="small">If river operators are closed or conditions are poor, convert the day into a mountain viewpoint/nature day. This is the strongest true substitute for Omiš.</p></div>
+    </div>
+  </section>
+
+  <section id="hvar1" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Wed Oct 14 • Sleep Hvar</div><h2>Hvar arrival: fortress, waterfront, island reset</h2></div><div class="sleep">Goal: luxury + views, not rushing</div></div>
+      <div class="travel"><a href="activities.html#oct14" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>⛴️ Split → Hvar Town catamaran · ~1 h 05</span><span>🚗 Return rental car in Split first</span><span>🚶 Square → Fortica · 20 min climb</span></div>
+      <div class="grid grid-3">
+        <div class="card"><span class="tag culture">Primary</span><h3>Hvar Town</h3><p class="small">St. Stephen's Square, cathedral, old lanes, waterfront and Franciscan Monastery make this a compact half-day cultural stop.</p></div>
+        <div class="card"><span class="tag nature">Primary</span><h3>Fortica Fortress</h3><p class="small">The classic Hvar view over town and the Pakleni Islands. Short climb, large payoff.</p></div>
+        <div class="card"><span class="tag relax">Reset</span><h3>Hotel / spa / wine</h3><p class="small">This is where the trip should feel slower and more polished after Plitvice + Omiš.</p></div>
+      </div>
+      <div class="option-matrix">
+        <div class="option"><b>Calm-sea bonus</b><span class="small">Pakleni Islands boat/taxi or kayak.</span></div>
+        <div class="option"><b>Warm-day bonus</b><span class="small">Pokonji Dol or nearby beach walk/swim.</span></div>
+        <div class="option"><b>Rain fallback</b><span class="small">Wine tasting, Fortica if clear break, long dinner.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hvar2" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Thu Oct 15 • Sleep Hvar</div><h2>Hvar beyond Hvar Town</h2></div><div class="sleep">Goal: island texture + optional adventure</div></div>
+      <div class="travel"><a href="activities.html#oct15" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🛵 Hvar Town → Dubovica · 15 min</span><span>🛵 → Stari Grad · 25 min</span><span>🛵 → Vrboska · 15 min</span><span>🛵 Stari Grad → Sv. Nedjelja · ~35 min</span></div>
+      <div class="grid grid-2">
+        <div class="card"><span class="tag nature">Primary loop</span><h3>Dubovica → Stari Grad → Vrboska</h3><div class="poi-list"><div class="poi"><strong>Dubovica</strong><em>Scenic pebble cove; better as a view/swim bonus than a full beach day.</em></div><div class="poi"><strong>Stari Grad</strong><em>Historic Pharos roots, waterfront, Tvrdalj and access to the UNESCO agricultural plain.</em></div><div class="poi"><strong>Vrboska</strong><em>Smaller village contrast, canals/bridges and cycling country.</em></div></div></div>
+        <div class="card"><span class="tag">Adventure alternate</span><h3>Sveta Nedjelja</h3><p class="small">Best Hvar substitute if you want the day to be more active: climbing/via ferrata territory, steep vineyards, sea cliffs and wine.</p><div class="poi-list"><div class="poi"><strong>Other nature route</strong><em>Milna → Malo Grablje → Velo Grablje / Brusje for old villages, herbs, olive groves and viewpoints.</em></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dub1" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Fri Oct 16 • Sleep Dubrovnik</div><h2>Dubrovnik arrival: orientation + Mount Srđ</h2></div><div class="sleep">Goal: save the walls for tomorrow</div></div>
+      <div class="travel"><a href="activities.html#oct16" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>⛴️ Hvar → Dubrovnik catamaran · ~3 h 30–4 h</span><span>🚕 Gruž port → Pile Gate · 15 min</span><span>🚡 Cable car to Srđ · 4 min (or 1 h hike)</span></div>
+      <div class="grid grid-3">
+        <div class="card"><span class="tag culture">Primary</span><h3>Old Town orientation</h3><p class="small">Pile Gate, Stradun, side alleys, Old Port and dinner. Keep it atmospheric, not exhaustive.</p></div>
+        <div class="card"><span class="tag nature">Primary if clear</span><h3>Mount Srđ</h3><p class="small">Cable car or hike for the classic overhead view of Dubrovnik, Lokrum and the coastline.</p></div>
+        <div class="card"><span class="tag alt">Fallback</span><h3>Delay Srđ</h3><p class="small">If ferry/weather timing is rough, just do Old Town at night and move Srđ to Oct 17.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dub2" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Sat Oct 17 • Sleep Dubrovnik</div><h2>Dubrovnik: walls, sea and island options</h2></div><div class="sleep">Goal: culture plus active coastline</div></div>
+      <div class="travel"><a href="activities.html#oct17" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚶 Walls loop · 1.5–2 h</span><span>⛴️ Old Port → Lokrum · 15 min</span><span>🚗 Dubrovnik → Trsteno · 25 min</span></div>
+      <div class="grid grid-2">
+        <div class="card"><span class="tag culture">Primary morning</span><h3>City Walls + Fort Lovrijenac</h3><p class="small">Do this first while fresh. The wall circuit is the single attraction in Dubrovnik most worth protecting from fatigue or bad timing.</p></div>
+        <div class="card"><span class="tag nature">Primary afternoon</span><h3>Lokrum or sea kayak</h3><p class="small">Lokrum gives forest, monastery ruins, botanical gardens and a tiny salt lake; kayak is the more active version if sea conditions are excellent.</p></div>
+      </div>
+      <div class="option-matrix">
+        <div class="option"><b>Windy-sea alternate</b><span class="small">Trsteno Arboretum by land.</span></div>
+        <div class="option"><b>Rain alternate</b><span class="small">Rector's Palace, Maritime Museum, churches, cafés.</span></div>
+        <div class="option"><b>High-energy version</b><span class="small">Walls + Srđ hike + kayak.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bosnia" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Sun Oct 18 • Sleep Dubrovnik</div><h2>Herzegovina day: Mostar + waterfalls</h2></div><div class="sleep">Goal: cultural contrast from the Adriatic coast</div></div>
+      <div class="travel"><a href="activities.html#oct18" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚗 Dubrovnik → Kravica → Počitelj → Mostar · 3 h 33 min / 180 km</span><span>🚗 Mostar → Dubrovnik · 2 h 39 min</span><span>🛂 2 border crossings — bring passports</span></div>
+      <div class="grid grid-4">
+        <div class="card compact"><span class="tag nature">Primary</span><h3>Kravica Falls</h3><p class="small">Nature opener; wide waterfall amphitheater. Swim only if weather/water temperature cooperate.</p></div>
+        <div class="card compact"><span class="tag culture">Primary</span><h3>Počitelj</h3><p class="small">Fortified Ottoman hillside village with quick climb and Neretva views.</p></div>
+        <div class="card compact"><span class="tag culture">Primary</span><h3>Mostar</h3><p class="small">Stari Most, bazaar, riverbanks, mosque viewpoint, Bosnian coffee and food.</p></div>
+        <div class="card compact"><span class="tag alt">Optional</span><h3>Blagaj</h3><p class="small">Buna spring + dervish monastery; strong but squeezes Mostar time if done on a group schedule.</p></div>
+      </div>
+      <div class="card" style="margin-top:18px"><span class="tag alt">Decision rule</span><h3>Mostar &gt; Kravica &gt; Počitelj ≈ Blagaj</h3><p class="small">With a private driver and smooth borders, do all four. With a group tour or delays, protect Mostar first, then Kravica.</p></div>
+    </div>
+  </section>
+
+  <section id="depart" class="slide">
+    <div class="slide-inner">
+      <div class="day-title"><div><div class="date">Mon Oct 19 • Fly home</div><h2>Departure day</h2></div><div class="sleep">Goal: no stressful add-ons</div></div>
+      <div class="travel"><a href="activities.html#oct19" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚗 Old Town → DBV airport · 32 min / 22 km</span><span>🚗 Cavtat → airport · 10 min</span></div>
+      <div class="grid grid-2">
+        <div class="card"><span class="tag relax">If morning flight</span><h3>Schedule nothing</h3><p class="small">Leave margin for traffic, packing and airport timing. Do not make this another sightseeing day.</p></div>
+        <div class="card"><span class="tag culture">If late flight</span><h3>Cavtat</h3><p class="small">Small waterfront town close to Dubrovnik Airport. Good final walk, lunch, Bukovac House or Račić Mausoleum without risking the flight.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="priorities" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">If plans change</div>
+      <h2>Protect these, sacrifice these</h2>
+      <div class="grid grid-2">
+        <div class="card"><span class="tag">Protect</span><div class="poi-list"><div class="poi"><strong>Plitvice Program H</strong><em>Signature nature experience.</em></div><div class="poi"><strong>Omiš / Cetina</strong><em>Best adventure concentration.</em></div><div class="poi"><strong>Hvar Fortica + Stari Grad side</strong><em>Island + culture + relaxation balance.</em></div><div class="poi"><strong>Dubrovnik Walls</strong><em>Single most important Dubrovnik POI.</em></div><div class="poi"><strong>Mostar + Kravica</strong><em>Best neighboring-country contrast.</em></div></div></div>
+        <div class="card"><span class="tag alt">Sacrifice first</span><div class="poi-list"><div class="poi"><strong>Salona</strong><em>Good, but optional after Split's palace.</em></div><div class="poi"><strong>Rastoke</strong><em>Pretty, but Plitvice is the main event.</em></div><div class="poi"><strong>Vrboska</strong><em>Nice add-on, not essential.</em></div><div class="poi"><strong>Trsteno</strong><em>Useful only if sea conditions block Lokrum/kayak.</em></div><div class="poi"><strong>Blagaj</strong><em>Worthwhile, but not at the cost of too little Mostar.</em></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sources" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Research links</div>
+      <h2>Sources to review</h2>
+      <p class="small">Selected sources used for routing logic, operating-season awareness, official POI details and traveler sentiment.</p>
+      <ul class="source-list">
+        <li><a href="https://np-plitvicka-jezera.hr/en/plan-your-visit/istrazite-jezera/activities/lake-tour-programmes/">Plitvice Lakes official lake tour programmes</a></li>
+        <li><a href="https://np-plitvicka-jezera.hr/en/plan-your-visit/istrazite-jezera/price-list/">Plitvice official price list</a></li>
+        <li><a href="https://www.earthtrekkers.com/how-to-visit-plitvice-lakes-travel-guide/">Earth Trekkers: Plitvice Lakes guide</a></li>
+        <li><a href="https://www.visitomis.hr/en/the-cetina-canyon">Visit Omiš: Cetina Canyon</a></li>
+        <li><a href="https://www.visitomis.hr/en/active-holiday">Visit Omiš: active holiday options</a></li>
+        <li><a href="https://www.raftingcetinaomis.com/info">Cetina rafting information</a></li>
+        <li><a href="https://pp-biokovo.hr/en/plan-your-visit/working-hours">Biokovo Nature Park working hours</a></li>
+        <li><a href="https://visithvar.hr/visit-hvar/island-of-hvar/">Visit Hvar: island overview</a></li>
+        <li><a href="https://visithvar.hr/see-and-do/island-of-hvar/">Visit Hvar: see and do</a></li>
+        <li><a href="https://www.tp-line.hr/en/novost/high-speed-ferry-line-842-dubrovnik-korcula-hvar-milna-split">TP Line ferry 842</a></li>
+        <li><a href="https://www.dubrovnikcablecar.com/timetable-and-prices/?path=timetable-and-prices">Dubrovnik Cable Car timetable</a></li>
+        <li><a href="https://tzdubrovnik.hr/lang/en/get/gradski_vodic/5302/city_walls_and_fortresses.html">Dubrovnik Tourism: City Walls</a></li>
+        <li><a href="https://www.lokrum.hr/en/">Lokrum official site</a></li>
+        <li><a href="https://kravica.ba/en/for-visitors/">Kravica Waterfalls visitor info</a></li>
+        <li><a href="https://visit-bosniaherzegovina.com/Destinations/Pocitelj">Visit Bosnia & Herzegovina: Počitelj</a></li>
+        <li><a href="https://www.reddit.com/r/CroatiaTravelTips/">Reddit: CroatiaTravelTips threads reviewed</a></li>
+        <li><a href="https://www.reddit.com/r/croatia/">Reddit: r/croatia travel discussions reviewed</a></li>
+      </ul>
+      <p class="tiny print-note">Printed from the standalone HTML itinerary deck.</p>
+    </div>
+  </section>
+  <script id="tripdata">
+window.TRIP = {"stays": [{"id": "split1", "title": "Split #1", "dates": "Oct 10 → 11", "nights": 1, "area": "Split Old Town", "anchor": "Peristyle", "verdict": "Location barely matters here — every pick is inside or right beside the palace.", "tip": "The Old Town is car-free: pick up the rental car on the morning of Oct 11 (airport or a city office) rather than on arrival, or choose a place offering off-site parking. Ask the host to hold bags if you book a different place for Oct 12–14.", "searches": [{"label": "Booking · 9+ Old Town", "url": "https://www.booking.com/searchresults.html?ss=Split+Old+Town%2C+Split%2C+Croatia&checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0&nflt=review_score%3D90&order=popularity"}, {"label": "Airbnb · Guest favourites", "url": "https://www.airbnb.com/s/Split--Croatia/homes?checkin=2026-10-10&checkout=2026-10-11&adults=2&guest_favorite=true"}, {"label": "Google Hotels", "url": "https://www.google.com/travel/search?q=hotels+Split+Old+Town&checkin=2026-10-10&checkout=2026-10-11&adults=2"}], "booking": [{"name": "Heritage Hotel Antique Split", "score": "9.7 · 514", "price": "$334", "tier": "Luxe", "km": 0.05, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/b-amp-b-antique.html?checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Murum Heritage Hotel", "score": "9.7 · 332", "price": "$362", "tier": "Luxe", "km": 0.06, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/murum-boutique-rooms.html?checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Villa Split Heritage Hotel", "score": "9.4 · 312", "price": "$312", "tier": "Luxe", "km": 0.1, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/villa-split-luxury-rooms.html?checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Lillium Heritage Luxury Suite", "score": "9.7 · 135", "price": "$206", "tier": "Mid", "km": 0.06, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/lillium-heritage-luxury-suite-diocletians-palace.html?checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Luxury Rooms Lucija and Luka", "score": "9.7 · 436", "price": "$144", "tier": "Value", "km": 0.17, "walk": "3 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/luxury-rooms-lucija-i-luka.html?checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Palace Augubio", "score": "9.4 · 274", "price": "$117", "tier": "Value", "km": 0.05, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/palace-augubio.html?checkin=2026-10-10&checkout=2026-10-11&group_adults=2&no_rooms=1&group_children=0"}], "airbnb": [{"name": "Rooftop terrace near Old Town (Bačvice)", "score": "4.96 · 171", "price": "$125", "km": 0.77, "walk": "12 min walk", "note": "Near Bačvice beach", "url": "https://www.airbnb.com/rooms/1104395702365414776?check_in=2026-10-10&check_out=2026-10-11&adults=2"}, {"name": "Old stone house near the Palace", "score": "4.95 · 511", "price": "$104", "km": 0.43, "walk": "7 min walk", "note": "", "url": "https://www.airbnb.com/rooms/18732379?check_in=2026-10-10&check_out=2026-10-11&adults=2"}, {"name": "A 1700-year-old Roman wall inside", "score": "4.99 · 131", "price": "$222", "km": 0.24, "walk": "4 min walk", "note": "", "url": "https://www.airbnb.com/rooms/11855188?check_in=2026-10-10&check_out=2026-10-11&adults=2"}, {"name": "200 ft from the Riva, private entrance", "score": "4.97 · 114", "price": "$258", "km": 0.14, "walk": "2 min walk", "note": "", "url": "https://www.airbnb.com/rooms/23076753?check_in=2026-10-10&check_out=2026-10-11&adults=2"}, {"name": "Quiet retreat below Marjan (Varoš)", "score": "4.91 · 164", "price": "$118", "km": 0.82, "walk": "13 min walk", "note": "Closest to Marjan trails", "url": "https://www.airbnb.com/rooms/926119947884000412?check_in=2026-10-10&check_out=2026-10-11&adults=2"}]}, {"id": "plitvice", "title": "Plitvice", "dates": "Oct 11 → 12", "nights": 1, "area": "Rastovača (Entrance 1) or Mukinje / Jezerce (Entrance 2)", "anchor": "park entrance", "verdict": "Location matters a lot — it's the whole point of sleeping here. Pick by entrance: Entrance 1 → Program C (starts at the Great Waterfall); Entrance 2 → Program H.", "tip": "Dropped two picks that were 8–10 km out (Drežnik Grad cabin, Guesthouse Zrinka). Everything below is walkable (≤ 25 min) to an entrance; you'll have the car anyway, and both entrances are a 5-min drive apart.", "searches": [{"label": "Booking · 9+ near park", "url": "https://www.booking.com/searchresults.html?ss=Plitvice+Lakes+National+Park%2C+Croatia&checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0&nflt=review_score%3D90&order=popularity"}, {"label": "Airbnb · Guest favourites", "url": "https://www.airbnb.com/s/Plitvička-Jezera--Croatia/homes?checkin=2026-10-11&checkout=2026-10-12&adults=2&guest_favorite=true"}, {"label": "Google Hotels", "url": "https://www.google.com/travel/search?q=hotels+near+Plitvice+Lakes&checkin=2026-10-11&checkout=2026-10-12&adults=2"}], "booking": [{"name": "Hotel Jezero (park hotel)", "score": "9.6", "price": "—", "tier": "Mid", "km": 0.5, "walk": "8 min walk", "note": "Entrance 2", "url": "https://www.booking.com/hotel/hr/jezero.html?checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Fenomen Plitvice Resort", "score": "9.4 · 678", "price": "$230", "tier": "Luxe", "km": 0.65, "walk": "10 min walk", "note": "Entrance 1", "url": "https://www.booking.com/hotel/hr/fenomen-plitvice.html?checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Plitvice Falls Cottage – rooms & dinner", "score": "9.6 · 1,831", "price": "$114", "tier": "Mid", "km": 0.88, "walk": "14 min walk", "note": "Entrance 1", "url": "https://www.booking.com/hotel/hr/plitvice-falls-cottage.html?checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Apartman Lana", "score": "9.9 · 112", "price": "$112", "tier": "Value", "km": 0.85, "walk": "13 min walk", "note": "Entrance 2", "url": "https://www.booking.com/hotel/hr/lana-plitvicka-jezera.html?checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0"}, {"name": "B&B Plitvica Creek", "score": "9.7 · 782", "price": "$121", "tier": "Value", "km": 1.03, "walk": "16 min walk", "note": "Entrance 1", "url": "https://www.booking.com/hotel/hr/b-amp-b-plitvica-creek.html?checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Guest House Plitvice Villa Verde", "score": "9.8 · 887", "price": "$100", "tier": "Value", "km": 1.89, "walk": "29 min walk", "note": "Entrance 2", "url": "https://www.booking.com/hotel/hr/guest-house-plitvice-villa-verde.html?checkin=2026-10-11&checkout=2026-10-12&group_adults=2&no_rooms=1&group_children=0"}], "airbnb": [{"name": "800 m from the National Park", "score": "4.98 · 84", "price": "$125", "km": 0.94, "walk": "15 min walk", "note": "Entrance 2", "url": "https://www.airbnb.com/rooms/1131118921780855907?check_in=2026-10-11&check_out=2026-10-12&adults=2"}, {"name": "In the heart of Plitvice, free parking", "score": "4.96 · 111", "price": "$113", "km": 1.04, "walk": "16 min walk", "note": "Entrance 2", "url": "https://www.airbnb.com/rooms/1111719293310602037?check_in=2026-10-11&check_out=2026-10-12&adults=2"}, {"name": "Forest view with jacuzzi (Jezerce)", "score": "4.91 · 80", "price": "$97", "km": 1.51, "walk": "24 min walk", "note": "Entrance 2", "url": "https://www.airbnb.com/rooms/909427894493463613?check_in=2026-10-11&check_out=2026-10-12&adults=2"}, {"name": "Walk to Plitvice Lakes Entrance 1", "score": "4.94 · 88", "price": "$125", "km": 0.92, "walk": "14 min walk", "note": "Entrance 1", "url": "https://www.airbnb.com/rooms/26776820?check_in=2026-10-11&check_out=2026-10-12&adults=2"}, {"name": "500 m from park entrance (Rastovača B&B)", "score": "4.86 · 857", "price": "$79", "km": 1.01, "walk": "16 min walk", "note": "Entrance 1", "url": "https://www.airbnb.com/rooms/3380832?check_in=2026-10-11&check_out=2026-10-12&adults=2"}]}, {"id": "split2", "title": "Split #2", "dates": "Oct 12 → 14", "nights": 2, "area": "Split Old Town", "anchor": "Peristyle", "verdict": "Old Town is right for evenings and the Oct 14 catamaran (ferry port is a 5-min walk) — the only catch is the car.", "tip": "Simplest fix: return the rental car when you get back on Oct 12 and book Cetina rafting / zipline with Split hotel pickup (most Omiš operators offer it). Then parking is irrelevant and every pick below works. If you keep the car, filter for parking with the second search.", "searches": [{"label": "Booking · 9+ Old Town", "url": "https://www.booking.com/searchresults.html?ss=Split+Old+Town%2C+Split%2C+Croatia&checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0&nflt=review_score%3D90&order=popularity"}, {"label": "Booking · with parking", "url": "https://www.booking.com/searchresults.html?ss=Split%2C+Croatia&checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0&nflt=review_score%3D90%3Bhotelfacility%3D2&order=popularity"}, {"label": "Airbnb · Guest favourites", "url": "https://www.airbnb.com/s/Split--Croatia/homes?checkin=2026-10-12&checkout=2026-10-14&adults=2&guest_favorite=true"}, {"label": "Google Hotels", "url": "https://www.google.com/travel/search?q=hotels+Split+Croatia&checkin=2026-10-12&checkout=2026-10-14&adults=2"}], "booking": [{"name": "Heritage Hotel Cardo", "score": "9.6 · 136", "price": "$345", "tier": "Luxe", "km": 0.06, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/heritage-cardo.html?checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Old Town Luxury House", "score": "9.5 · 55", "price": "$406", "tier": "Luxe", "km": 0.26, "walk": "4 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/old-town-luxury-house-split.html?checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Riva Palace", "score": "9.2 · 348", "price": "$187", "tier": "Mid", "km": 0.06, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/riva-palace-split.html?checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Guest House Imperial", "score": "9.6 · 181", "price": "$169", "tier": "Mid", "km": 0.1, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/guest-house-imperial.html?checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Luxury Apartments Lilly 2", "score": "9.8 · 97", "price": "$147", "tier": "Value", "km": 0.22, "walk": "3 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/luxury-apartments-lilly-2.html?checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Porto Nativo Split", "score": "9.6 · 125", "price": "$128", "tier": "Value", "km": 0.37, "walk": "6 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/porto-nativo-split.html?checkin=2026-10-12&checkout=2026-10-14&group_adults=2&no_rooms=1&group_children=0"}], "airbnb": [{"name": "1700s stone house in the Palace", "score": "4.98 · 372", "price": "$305", "km": 0.11, "walk": "2 min walk", "note": "", "url": "https://www.airbnb.com/rooms/27506542?check_in=2026-10-12&check_out=2026-10-14&adults=2"}, {"name": "Inside Diocletian's Palace, private entrance", "score": "4.98 · 287", "price": "$342", "km": 0.11, "walk": "2 min walk", "note": "", "url": "https://www.airbnb.com/rooms/5452710?check_in=2026-10-12&check_out=2026-10-14&adults=2"}, {"name": "Fruit Square, cathedral & tower views", "score": "4.88 · 610", "price": "$227", "km": 0.17, "walk": "3 min walk", "note": "", "url": "https://www.airbnb.com/rooms/18800883?check_in=2026-10-12&check_out=2026-10-14&adults=2"}, {"name": "Dobrić quarter, 40 m from Riva", "score": "4.87 · 209", "price": "$219", "km": 0.19, "walk": "3 min walk", "note": "", "url": "https://www.airbnb.com/rooms/43539463?check_in=2026-10-12&check_out=2026-10-14&adults=2"}, {"name": "Palace courtyard, private entrance", "score": "4.91 · 220", "price": "$302", "km": 0.08, "walk": "1 min walk", "note": "", "url": "https://www.airbnb.com/rooms/35411177?check_in=2026-10-12&check_out=2026-10-14&adults=2"}]}, {"id": "hvar", "title": "Hvar", "dates": "Oct 14 → 16", "nights": 2, "area": "Hvar Town", "anchor": "catamaran pier", "verdict": "Matters — you arrive and leave by catamaran with bags. All picks are in Hvar Town; the Booking hotels are all on the harbour (≤ 4 min walk).", "tip": "Two Airbnbs sit 0.75–1 km west along the coast (quieter, sea views, ~15 min walk). Mid-October some Hvar hotels close around Oct 15–20 — confirm it's open both nights.", "searches": [{"label": "Booking · 9+ Hvar", "url": "https://www.booking.com/searchresults.html?ss=Hvar%2C+Hvar+Island%2C+Croatia&checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0&nflt=review_score%3D90&order=popularity"}, {"label": "Booking · 4–5★", "url": "https://www.booking.com/searchresults.html?ss=Hvar%2C+Hvar+Island%2C+Croatia&checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0&nflt=class%3D4%3Bclass%3D5%3Breview_score%3D80&order=popularity"}, {"label": "Airbnb · Guest favourites", "url": "https://www.airbnb.com/s/Hvar--Croatia/homes?checkin=2026-10-14&checkout=2026-10-16&adults=2&guest_favorite=true"}, {"label": "Google Hotels", "url": "https://www.google.com/travel/search?q=hotels+Hvar+Town&checkin=2026-10-14&checkout=2026-10-16&adults=2"}], "booking": [{"name": "Palace Elisabeth (Leading Hotels)", "score": "9.5 · 109", "price": "$579", "tier": "Luxe", "km": 0.14, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/the-palace.html?checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Riva Marina Hvar Hotel", "score": "9.5 · 303", "price": "$368", "tier": "Luxe", "km": 0.14, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/riva-suncani-hvar-hotels.html?checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Adriana Hvar Spa Hotel", "score": "9.2 · 426", "price": "$345", "tier": "Luxe", "km": 0.13, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/adriana-hvar-marina-and-spa.html?checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Heritage Hotel Park Hvar", "score": "9.5 · 440", "price": "$251", "tier": "Mid", "km": 0.15, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/heritage-park-hvar.html?checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0"}, {"name": "History Hvar 1529", "score": "9.7 · 434", "price": "$170", "tier": "Mid", "km": 0.17, "walk": "3 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/history-hvar.html?checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Villa Nora Hvar", "score": "9.8 · 415", "price": "$170", "tier": "Value", "km": 0.27, "walk": "4 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/villa-nora-hvar.html?checkin=2026-10-14&checkout=2026-10-16&group_adults=2&no_rooms=1&group_children=0"}], "airbnb": [{"name": "Balcony with Pakleni Islands views", "score": "4.96 · 397", "price": "$318", "km": 0.11, "walk": "2 min walk", "note": "", "url": "https://www.airbnb.com/rooms/3569028?check_in=2026-10-14&check_out=2026-10-16&adults=2"}, {"name": "Sea & square views, stone house", "score": "4.93 · 486", "price": "$210", "km": 0.05, "walk": "1 min walk", "note": "", "url": "https://www.airbnb.com/rooms/4944145?check_in=2026-10-14&check_out=2026-10-16&adults=2"}, {"name": "Beachfront suite, sea-view balcony", "score": "5.0 · 137", "price": "$353", "km": 0.42, "walk": "7 min walk", "note": "", "url": "https://www.airbnb.com/rooms/26071963?check_in=2026-10-14&check_out=2026-10-16&adults=2"}, {"name": "Adriatic & Pakleni views, private terrace", "score": "4.98 · 58", "price": "$246", "km": 0.75, "walk": "12 min walk", "note": "West of town", "url": "https://www.airbnb.com/rooms/1169804961497567856?check_in=2026-10-14&check_out=2026-10-16&adults=2"}, {"name": "Top floor panorama, beach access", "score": "4.99 · 157", "price": "$386", "km": 1.0, "walk": "16 min walk", "note": "West of town", "url": "https://www.airbnb.com/rooms/1411990?check_in=2026-10-14&check_out=2026-10-16&adults=2"}]}, {"id": "dubrovnik", "title": "Dubrovnik", "dates": "Oct 16 → 19", "nights": 3, "area": "Old Town / Pile / Ploče", "anchor": "Pile Gate", "verdict": "Matters most of any leg — walls at 8 am, Lokrum boats, dinners, all on foot. Dropped two Lapad hotels (~4 km, bus/taxi every trip).", "tip": "Inside the walls = no cars, lots of stairs with bags (porters/taxis stop at Pile or Ploče gate). The 'Old Town view' Airbnbs are uphill above the walls — great views, steep steps.", "searches": [{"label": "Booking · 9+ Old Town", "url": "https://www.booking.com/searchresults.html?ss=Dubrovnik+Old+Town%2C+Dubrovnik%2C+Croatia&checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0&nflt=review_score%3D90&order=popularity"}, {"label": "Booking · 4–5★ Old Town", "url": "https://www.booking.com/searchresults.html?ss=Dubrovnik+Old+Town%2C+Dubrovnik%2C+Croatia&checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0&nflt=class%3D4%3Bclass%3D5&order=popularity"}, {"label": "Airbnb · Guest favourites", "url": "https://www.airbnb.com/s/Dubrovnik--Croatia/homes?checkin=2026-10-16&checkout=2026-10-19&adults=2&guest_favorite=true"}, {"label": "Google Hotels", "url": "https://www.google.com/travel/search?q=hotels+Dubrovnik+Old+Town&checkin=2026-10-16&checkout=2026-10-19&adults=2"}], "booking": [{"name": "Hilton Imperial Dubrovnik", "score": "—", "price": "—", "tier": "Luxe", "km": 0.23, "walk": "4 min walk", "note": "Right outside Pile Gate", "url": "https://www.booking.com/hotel/hr/hilton-imperial-dubrovnik.html?checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0"}, {"name": "The Pucić Palace", "score": "—", "price": "—", "tier": "Luxe", "km": 0.25, "walk": "4 min walk", "note": "Inside the walls", "url": "https://www.booking.com/hotel/hr/the-pucic-palace.html?checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Prijeko Palace", "score": "9.2 · 333", "price": "$410", "tier": "Luxe", "km": 0.15, "walk": "2 min walk", "note": "Inside the walls", "url": "https://www.booking.com/hotel/hr/prijeko-palace.html?checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Hotel Bellevue Dubrovnik", "score": "9.4 · 471", "price": "$343", "tier": "Luxe", "km": 1.35, "walk": "21 min walk", "note": "Cliffside, own beach; ~20 min walk or 5 min taxi", "url": "https://www.booking.com/hotel/hr/bellevue-dubrovnik.html?checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Angelus Apartments", "score": "9.6 · 244", "price": "$170", "tier": "Mid", "km": 0.07, "walk": "1 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/angelus-apartments.html?checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0"}, {"name": "Placeta Apartments & Rooms", "score": "9.2 · 395", "price": "$112", "tier": "Value", "km": 0.13, "walk": "2 min walk", "note": "", "url": "https://www.booking.com/hotel/hr/rooms-placeta.html?checkin=2026-10-16&checkout=2026-10-19&group_adults=2&no_rooms=1&group_children=0"}], "airbnb": [{"name": "Renovated Old Town flat near Stradun", "score": "4.98 · 230", "price": "$551", "km": 0.32, "walk": "5 min walk", "note": "", "url": "https://www.airbnb.com/rooms/46964824?check_in=2026-10-16&check_out=2026-10-19&adults=2"}, {"name": "Quiet area, 5-min walk to Old Town", "score": "4.97 · 217", "price": "$353", "km": 0.44, "walk": "7 min walk", "note": "", "url": "https://www.airbnb.com/rooms/44839084?check_in=2026-10-16&check_out=2026-10-19&adults=2"}, {"name": "Peaceful Pile, 5–10 min to Old Town", "score": "4.94 · 368", "price": "$393", "km": 0.52, "walk": "8 min walk", "note": "", "url": "https://www.airbnb.com/rooms/13768318?check_in=2026-10-16&check_out=2026-10-19&adults=2"}, {"name": "Sea & Old Town views balcony", "score": "4.96 · 654", "price": "$821", "km": 0.69, "walk": "11 min walk", "note": "Uphill, steps", "url": "https://www.airbnb.com/rooms/679813?check_in=2026-10-16&check_out=2026-10-19&adults=2"}, {"name": "Panoramic Old Town views from balcony", "score": "4.95 · 421", "price": "$474", "km": 0.71, "walk": "11 min walk", "note": "Uphill, steps", "url": "https://www.airbnb.com/rooms/2965048?check_in=2026-10-16&check_out=2026-10-19&adults=2"}]}], "legs": [{"date": "Oct 9–10", "mode": "✈️ + 🚗", "frm": "Home", "to": "Split Old Town", "time": "flight + 35 min", "dist": "24 km", "note": "Airport → Old Town. Pick up rental car now or on Oct 11.", "link": "https://www.google.com/maps/dir/Split+Airport/Diocletian%27s+Palace%2C+Split/data=!4m2!4m1!3e0"}, {"date": "Oct 11", "mode": "🚗", "frm": "Split", "to": "Plitvice (Entrance 1)", "time": "2 h 29 min", "dist": "241 km", "note": "A1 motorway (tolls ~€15). Leave by 7 am to walk Program H/C the same day.", "link": "https://www.google.com/maps/dir/Split%2C+Croatia/Plitvice+Lakes+Entrance+1/data=!4m2!4m1!3e0"}, {"date": "Oct 11", "mode": "🚗", "frm": "Plitvice", "to": "Rastoke / Barać Caves", "time": "~30 min", "dist": "~35 km", "note": "Optional afternoon add-on.", "link": "https://www.google.com/maps/dir/Plitvice+Lakes+Entrance+1/Rastoke%2C+Slunj/data=!4m2!4m1!3e0"}, {"date": "Oct 12", "mode": "🚗", "frm": "Plitvice", "to": "Klis Fortress", "time": "2 h 18 min", "dist": "230 km", "note": "Then Klis → Split 20 min. Trogir option ≈ same drive + 35 min into Split.", "link": "https://www.google.com/maps/dir/Plitvice+Lakes+Entrance+1/Klis+Fortress/Split%2C+Croatia/data=!4m2!4m1!3e0"}, {"date": "Oct 12 alt", "mode": "🚗", "frm": "Plitvice", "to": "Krka (Skradin) → Split", "time": "~1 h 50 + 1 h", "dist": "~250 km", "note": "Only if you want a second waterfall park.", "link": "https://www.google.com/maps/dir/Plitvice+Lakes+Entrance+1/Skradin/Split%2C+Croatia/data=!4m2!4m1!3e0"}, {"date": "Oct 13", "mode": "🚗", "frm": "Split", "to": "Omiš", "time": "41 min", "dist": "25 km", "note": "Rafting operators usually meet in Omiš; 3–4 h on the river.", "link": "https://www.google.com/maps/dir/Split%2C+Croatia/Omi%C5%A1%2C+Croatia/data=!4m2!4m1!3e0"}, {"date": "Oct 13 alt", "mode": "🚗", "frm": "Omiš", "to": "Biokovo Skywalk", "time": "~1 h 15 min", "dist": "~55 km", "note": "Park road is single-lane and slow; closes in high wind.", "link": "https://www.google.com/maps/dir/Omi%C5%A1%2C+Croatia/Biokovo+Skywalk/data=!4m2!4m1!3e0"}, {"date": "Oct 14", "mode": "⛴️", "frm": "Split port", "to": "Hvar Town", "time": "~1 h 05 min", "dist": "catamaran", "note": "Drop rental car in Split first. Car ferry alt: Split → Stari Grad 2 h + 20 min drive.", "link": "https://www.jadrolinija.hr/en"}, {"date": "Oct 15", "mode": "🛵/🚗", "frm": "Hvar Town", "to": "Dubovica → Stari Grad → Vrboska", "time": "15 + 25 + 15 min", "dist": "~40 km", "note": "Rent a scooter/car in Hvar Town for the day. Sveta Nedjelja via Pitve tunnel ~35 min from Stari Grad.", "link": "https://www.google.com/maps/dir/Hvar+Town/Dubovica+Beach%2C+Hvar/Stari+Grad%2C+Hvar/Vrboska/Hvar+Town/data=!4m2!4m1!3e0"}, {"date": "Oct 16", "mode": "⛴️", "frm": "Hvar Town", "to": "Dubrovnik (Gruž)", "time": "~3 h 30 – 4 h", "dist": "catamaran", "note": "TP Line 842 / Kapetan Luka. Verify mid-October timetable — shoulder-season service thins out. Backup: ferry to Split + 4 h 30 drive/bus.", "link": "https://www.tp-line.hr/en/novost/high-speed-ferry-line-842-dubrovnik-korcula-hvar-milna-split"}, {"date": "Oct 16", "mode": "🚕", "frm": "Gruž port", "to": "Pile Gate", "time": "~15 min", "dist": "4 km", "note": "Taxi or bus 1A/1B/3.", "link": "https://www.google.com/maps/dir/Port+of+Dubrovnik+Gru%C5%BE/Pile+Gate%2C+Dubrovnik/data=!4m2!4m1!3e0"}, {"date": "Oct 17", "mode": "🚶/⛴️", "frm": "Old Port", "to": "Lokrum", "time": "15 min boat", "dist": "—", "note": "Boats every 30 min; last return ~6 pm in October.", "link": "https://www.lokrum.hr/en/"}, {"date": "Oct 18", "mode": "🚗", "frm": "Dubrovnik", "to": "Kravica → Počitelj → Mostar", "time": "3 h 33 min total", "dist": "180 km", "note": "Two border crossings (HR→BiH). Bring passports & car green card if self-driving.", "link": "https://www.google.com/maps/dir/Pile+Gate%2C+Dubrovnik/Kravica+Waterfall/Po%C4%8Ditelj/Stari+Most%2C+Mostar/data=!4m2!4m1!3e0"}, {"date": "Oct 18", "mode": "🚗", "frm": "Mostar", "to": "Dubrovnik", "time": "2 h 39 min", "dist": "137 km", "note": "Blagaj adds ~20 min each way.", "link": "https://www.google.com/maps/dir/Stari+Most%2C+Mostar/Pile+Gate%2C+Dubrovnik/data=!4m2!4m1!3e0"}, {"date": "Oct 19", "mode": "🚗", "frm": "Dubrovnik", "to": "Airport (DBV)", "time": "32 min", "dist": "22 km", "note": "Cavtat → airport only ~10 min.", "link": "https://www.google.com/maps/dir/Pile+Gate%2C+Dubrovnik/Dubrovnik+Airport/data=!4m2!4m1!3e0"}], "layers": [{"name": "Oct 10 · Split", "color": "#d46a4c", "pois": [{"name": "Split Airport (SPU)", "lat": 43.5389, "lng": 16.298, "kind": "hub", "note": "Arrival. ~35 min / 24 km to Old Town by car; airport shuttle bus ~45 min."}, {"name": "Diocletian's Palace – Peristyle", "lat": 43.5081, "lng": 16.4402, "kind": "culture", "note": "Heart of the palace. Go at night too — lit up, live klapa singing some evenings."}, {"name": "Cathedral of St. Domnius & Bell Tower", "lat": 43.5078, "lng": 16.4405, "kind": "culture", "note": "Climb the bell tower for the best Old Town rooftop view."}, {"name": "Palace Cellars (Substructures)", "lat": 43.5076, "lng": 16.44, "kind": "culture", "note": "Rain-proof; Game of Thrones filming location."}, {"name": "Golden Gate & Grgur Ninski statue", "lat": 43.5093, "lng": 16.4398, "kind": "culture", "note": "Rub the statue's toe for luck."}, {"name": "Riva Promenade", "lat": 43.5075, "lng": 16.4385, "kind": "relax", "note": "Evening stroll + coffee."}, {"name": "Green Market (Pazar)", "lat": 43.5087, "lng": 16.4415, "kind": "food", "note": "Morning produce, figs, cheese, dried lavender. [added]"}, {"name": "Vidilica Café (Marjan viewpoint)", "lat": 43.5095, "lng": 16.4299, "kind": "nature", "note": "15-min stair climb from Varoš; sunset view over Split. [added]"}, {"name": "Marjan – Telegrin summit", "lat": 43.5087, "lng": 16.4133, "kind": "nature", "note": "Top of Marjan; full loop 2–3 h."}, {"name": "Kasjuni Beach", "lat": 43.504, "lng": 16.4025, "kind": "relax", "note": "Quieter Marjan beach if warm. [added]"}, {"name": "Salona Archaeological Park", "lat": 43.539, "lng": 16.483, "kind": "alt", "note": "Roman provincial capital ruins, 15 min from Split."}, {"name": "Bačvice Beach", "lat": 43.502, "lng": 16.447, "kind": "relax", "note": "City beach; play picigin. [added]"}]}, {"name": "Oct 11 · Plitvice", "color": "#87a96b", "pois": [{"name": "Plitvice – Entrance 1", "lat": 44.9019, "lng": 15.6097, "kind": "nature", "note": "Program H starts from Entrance 2 (bus); Program C from Entrance 1. Arrive by 8–9 am."}, {"name": "Plitvice – Entrance 2", "lat": 44.8813, "lng": 15.6222, "kind": "nature", "note": "Start of Program H."}, {"name": "Veliki Slap (Great Waterfall)", "lat": 44.9031, "lng": 15.61, "kind": "nature", "note": "78 m — tallest in Croatia."}, {"name": "Kozjak Lake boat (P1–P2)", "lat": 44.88, "lng": 15.618, "kind": "nature", "note": "Electric boat crossing, included in ticket."}, {"name": "Galovac & Upper Lakes", "lat": 44.87, "lng": 15.601, "kind": "nature", "note": "Best cascades; autumn colour peak mid-Oct."}, {"name": "Viewpoint over Lower Lakes (Kozjačka)", "lat": 44.9005, "lng": 15.609, "kind": "nature", "note": "Classic postcard shot near Entrance 1."}, {"name": "Rastoke (Slunj)", "lat": 45.1224, "lng": 15.5808, "kind": "alt", "note": "Water-mill village, ~30 min north of park."}, {"name": "Barać Caves", "lat": 45.0119, "lng": 15.5669, "kind": "alt", "note": "Rain fallback, ~25 min from park."}, {"name": "Restaurant Lička Kuća", "lat": 44.902, "lng": 15.608, "kind": "food", "note": "Lamb & Lika potatoes by Entrance 1. [added]"}]}, {"name": "Oct 12 · Drive south", "color": "#d9a441", "pois": [{"name": "Krka NP – Skradinski Buk", "lat": 43.805, "lng": 15.963, "kind": "alt", "note": "[added] Right off the A1; big travertine falls. Only if you want more waterfalls — adds ~1.5 h."}, {"name": "Šibenik – St. James Cathedral", "lat": 43.7367, "lng": 15.8889, "kind": "alt", "note": "UNESCO cathedral; prettier old town, more detour."}, {"name": "Trogir Old Town", "lat": 43.517, "lng": 16.251, "kind": "culture", "note": "UNESCO island town; lunch on the waterfront."}, {"name": "Kamerlengo Fortress", "lat": 43.516, "lng": 16.248, "kind": "culture", "note": "Trogir's fortress walk-up."}, {"name": "Klis Fortress", "lat": 43.5596, "lng": 16.5234, "kind": "culture", "note": "Plitvice → Klis 2 h 18 min; Klis → Split 20 min. Go for sunset."}, {"name": "Restoran Perlica (Klis)", "lat": 43.562, "lng": 16.526, "kind": "food", "note": "Spit-roast lamb (Klis is famous for it). [added]"}]}, {"name": "Oct 13 · Omiš & Cetina", "color": "#e0503a", "pois": [{"name": "Omiš Old Town", "lat": 43.4447, "lng": 16.6886, "kind": "culture", "note": "Split → Omiš 41 min / 25 km."}, {"name": "Cetina rafting put-in (Penšići area)", "lat": 43.44, "lng": 16.77, "kind": "adventure", "note": "Half-day rafting, 3–4 h; operators pick up in Omiš."}, {"name": "Radmanove Mlinice", "lat": 43.445, "lng": 16.727, "kind": "food", "note": "Riverside mill restaurant — rafting take-out. Trout!"}, {"name": "Zipline Omiš", "lat": 43.448, "lng": 16.7, "kind": "adventure", "note": "8 lines over the canyon, ~3 h incl. transfer."}, {"name": "Fortica (Starigrad) Fortress", "lat": 43.446, "lng": 16.696, "kind": "adventure", "note": "Steep ~1 h hike, huge canyon/sea view."}, {"name": "Mirabela Fortress", "lat": 43.445, "lng": 16.69, "kind": "culture", "note": "Easy 10-min climb from town."}, {"name": "Gubavica Waterfall", "lat": 43.4338, "lng": 16.8898, "kind": "nature", "note": "Canyon waterfall viewpoint above Zadvarje. [added]"}, {"name": "Biokovo Skywalk", "lat": 43.32, "lng": 17.058, "kind": "alt", "note": "Glass platform, ~1 h 15 from Omiš via Makarska. Check park road hours/wind."}, {"name": "Makarska", "lat": 43.2969, "lng": 17.0178, "kind": "alt", "note": "Base town for Biokovo. [added]"}]}, {"name": "Oct 14 · Hvar Town", "color": "#6ba6b8", "pois": [{"name": "Split Ferry Port", "lat": 43.5033, "lng": 16.4413, "kind": "hub", "note": "Catamaran to Hvar Town ~1 h 05 (Jadrolinija / Kapetan Luka / TP Line)."}, {"name": "Hvar Town catamaran pier", "lat": 43.1715, "lng": 16.4405, "kind": "hub", "note": "Arrival."}, {"name": "St. Stephen's Square & Cathedral", "lat": 43.1722, "lng": 16.442, "kind": "culture", "note": "Largest square in Dalmatia."}, {"name": "Fortica (Španjola) Hvar", "lat": 43.1745, "lng": 16.441, "kind": "nature", "note": "20-min climb; sunset over Pakleni Islands."}, {"name": "Franciscan Monastery", "lat": 43.1695, "lng": 16.4455, "kind": "culture", "note": "Seaside cloister, Last Supper painting."}, {"name": "Arsenal & Renaissance Theatre", "lat": 43.1717, "lng": 16.4412, "kind": "culture", "note": "One of Europe's oldest public theatres (1612). [added]"}, {"name": "Pakleni Islands – Palmižana", "lat": 43.163, "lng": 16.396, "kind": "relax", "note": "Taxi boat 15–20 min if sea is calm."}, {"name": "Pokonji Dol beach", "lat": 43.164, "lng": 16.461, "kind": "relax", "note": "20-min coastal walk east of town."}, {"name": "Hula Hula Beach Bar", "lat": 43.1686, "lng": 16.433, "kind": "food", "note": "Sunset drinks, west promenade. [added]"}]}, {"name": "Oct 15 · Hvar Island loop", "color": "#5b8fa0", "pois": [{"name": "Velo Grablje", "lat": 43.17, "lng": 16.508, "kind": "nature", "note": "Abandoned lavender village; Konoba Zbondini. 15 min from town."}, {"name": "Malo Grablje", "lat": 43.158, "lng": 16.517, "kind": "nature", "note": "Ghost village; Konoba Stori Komin. [route option]"}, {"name": "Milna (Hvar)", "lat": 43.1575, "lng": 16.491, "kind": "relax", "note": "Small cove village."}, {"name": "Brusje", "lat": 43.186, "lng": 16.477, "kind": "nature", "note": "Hilltop village, herb & olive country."}, {"name": "Dubovica Beach", "lat": 43.1537, "lng": 16.526, "kind": "relax", "note": "Park at road, 15-min walk down. 15 min from Hvar Town."}, {"name": "Stari Grad & Tvrdalj", "lat": 43.1842, "lng": 16.5945, "kind": "culture", "note": "Oldest town in Croatia (384 BC). 25 min from Hvar Town."}, {"name": "Stari Grad Plain (UNESCO)", "lat": 43.178, "lng": 16.63, "kind": "nature", "note": "Greek field grid 2,400 years old; cycle or drive through."}, {"name": "Vrboska", "lat": 43.181, "lng": 16.675, "kind": "culture", "note": "'Little Venice' of Hvar; 15 min past Stari Grad."}, {"name": "Jelsa", "lat": 43.1618, "lng": 16.6932, "kind": "food", "note": "Nice harbour for lunch. [added]"}, {"name": "Sveta Nedjelja", "lat": 43.1449, "lng": 16.6102, "kind": "adventure", "note": "Via Pitve tunnel; cliff climbing, vineyards (Zlatan Otok winery)."}, {"name": "Zlatan Otok Winery", "lat": 43.144, "lng": 16.612, "kind": "food", "note": "Tasting at Sveta Nedjelja. [added]"}]}, {"name": "Oct 16–17 · Dubrovnik", "color": "#a88ec9", "pois": [{"name": "Dubrovnik Gruž Port", "lat": 42.658, "lng": 18.085, "kind": "hub", "note": "Catamaran from Hvar ~3 h 30–4 h; taxi/bus to Pile 15 min."}, {"name": "Pile Gate", "lat": 42.6415, "lng": 18.107, "kind": "culture", "note": "Main entrance."}, {"name": "Stradun", "lat": 42.641, "lng": 18.1098, "kind": "culture", "note": "Main street."}, {"name": "Old Port", "lat": 42.6405, "lng": 18.1135, "kind": "culture", "note": "Boats to Lokrum leave here."}, {"name": "Cable Car lower station", "lat": 42.643, "lng": 18.114, "kind": "hub", "note": "4 min up."}, {"name": "Mount Srđ / Fort Imperial", "lat": 42.648, "lng": 18.115, "kind": "nature", "note": "Hike 45–60 min or cable car; go for sunset."}, {"name": "City Walls entrance (Pile)", "lat": 42.6419, "lng": 18.1073, "kind": "culture", "note": "Start 8 am opening; 2 km loop, 1.5–2 h."}, {"name": "Minčeta Tower", "lat": 42.6428, "lng": 18.1085, "kind": "culture", "note": "Highest point on the walls."}, {"name": "Fort Lovrijenac", "lat": 42.641, "lng": 18.104, "kind": "culture", "note": "Included with walls ticket."}, {"name": "Lokrum Island", "lat": 42.627, "lng": 18.121, "kind": "nature", "note": "15-min ferry; botanical garden, Dead Sea lake, peacocks."}, {"name": "Sea kayak launch (Pulitika / Pile)", "lat": 42.6417, "lng": 18.106, "kind": "adventure", "note": "Kayak to Lokrum & Betina cave, ~3 h."}, {"name": "Rector's Palace", "lat": 42.6403, "lng": 18.1109, "kind": "culture", "note": "Rain option."}, {"name": "Maritime Museum (St. John Fortress)", "lat": 42.6397, "lng": 18.1137, "kind": "culture", "note": "Rain option."}, {"name": "Buža Bar", "lat": 42.6388, "lng": 18.1102, "kind": "relax", "note": "Cliff-side bar outside the walls. [added]"}, {"name": "Banje Beach", "lat": 42.6415, "lng": 18.1165, "kind": "relax", "note": "Old Town view beach. [added]"}, {"name": "Trsteno Arboretum", "lat": 42.712, "lng": 17.975, "kind": "alt", "note": "25 min north; windy-sea alternate."}]}, {"name": "Oct 18 · Herzegovina", "color": "#c9804a", "pois": [{"name": "Kravica Waterfalls", "lat": 43.1566, "lng": 17.6078, "kind": "nature", "note": "Dubrovnik → Kravica ~2 h 15 incl. border."}, {"name": "Počitelj", "lat": 43.1339, "lng": 17.7314, "kind": "culture", "note": "Ottoman fortress village, 20 min from Kravica."}, {"name": "Blagaj Tekke", "lat": 43.2567, "lng": 17.9024, "kind": "alt", "note": "Dervish house at Buna spring; 20 min from Mostar."}, {"name": "Stari Most (Old Bridge)", "lat": 43.3373, "lng": 17.815, "kind": "culture", "note": "Watch divers; Kujundžiluk bazaar."}, {"name": "Koski Mehmed Pasha Mosque minaret", "lat": 43.3393, "lng": 17.8144, "kind": "culture", "note": "Best bridge viewpoint."}, {"name": "Crooked Bridge (Kriva Ćuprija)", "lat": 43.3383, "lng": 17.8138, "kind": "culture", "note": "Tiny predecessor to Stari Most. [added]"}, {"name": "Kotor, Montenegro", "lat": 42.4247, "lng": 18.7712, "kind": "alt", "note": "Alternative day trip instead of Bosnia."}]}, {"name": "Oct 19 · Departure", "color": "#8a8378", "pois": [{"name": "Cavtat Riva", "lat": 42.5808, "lng": 18.218, "kind": "relax", "note": "If late flight. 10 min to airport."}, {"name": "Račić Mausoleum", "lat": 42.5836, "lng": 18.214, "kind": "culture", "note": "Meštrović-designed, on Cavtat peninsula."}, {"name": "Dubrovnik Airport (DBV)", "lat": 42.5614, "lng": 18.2682, "kind": "hub", "note": "Old Town → airport 32 min / 22 km."}]}, {"name": "Stays (neighbourhoods)", "color": "#ffffff", "pois": [{"name": "STAY Oct 10–11 · Split Old Town", "lat": 43.5085, "lng": 16.44, "kind": "stay", "note": "Inside/next to the palace. Walkable everything."}, {"name": "STAY Oct 11–12 · Plitvice (Mukinje / Rastovača)", "lat": 44.885, "lng": 15.628, "kind": "stay", "note": "Walk or 5-min drive to Entrance 2 — early start."}, {"name": "STAY Oct 12–14 · Split (Varoš / Old Town)", "lat": 43.51, "lng": 16.434, "kind": "stay", "note": "Pick a place with parking if you still have the car."}, {"name": "STAY Oct 14–16 · Hvar Town", "lat": 43.171, "lng": 16.443, "kind": "stay", "note": "The splurge nights."}, {"name": "STAY Oct 16–19 · Dubrovnik (Ploče / Pile)", "lat": 42.642, "lng": 18.115, "kind": "stay", "note": "Just outside the walls = easier luggage + views."}]}]};
+</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script>
+  (function () {
+    const T = window.TRIP, esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const a = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+
+    // travel legs table
+    document.querySelector('#legs-table tbody').innerHTML = T.legs.map(l =>
+      `<tr><td><strong>${esc(l.date)}</strong></td><td>${l.mode}</td><td><strong>${a(l.link, l.frm + ' → ' + l.to)}</strong></td><td>${esc(l.time)}</td><td>${esc(l.dist)}</td><td>${esc(l.note)}</td></tr>`).join('');
+
+    // stays
+    const row = (h, s, score, tier) => {
+      const dest = /^Entrance/.test(h.note) ? h.note : s.anchor;
+      const extra = h.note && !/^Entrance/.test(h.note) ? ` · ${esc(h.note)}` : '';
+      return `<li><span>${a(h.url, h.name)}${tier ? `<span class="tier">${esc(tier)}</span>` : ''}` +
+        `<span class="walk">🚶 ${esc(h.walk)} to ${esc(dest)}${extra}</span></span>` +
+        `<span class="sc">${esc(score)}</span><span class="pr">${esc(h.price)}</span></li>`;
+    };
+    document.getElementById('stays-list').innerHTML = T.stays.map(s => `
+      <div class="card stay">
+        <div class="stay-head"><span class="tag relax">${esc(s.dates)} · ${s.nights} night${s.nights > 1 ? 's' : ''}</span><h3>${esc(s.title)} — ${esc(s.area)}</h3></div>
+        <p class="small"><strong>📍 Location:</strong> ${esc(s.verdict)}</p>
+        <p class="small">${esc(s.tip)}</p>
+        <div>${s.searches.map(x => `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join('')}</div>
+        <div class="grid grid-2" style="margin-top:12px">
+          <div><b>Booking.com picks</b><ul class="stay-list">${s.booking.map(h => row(h, s, h.score, h.tier)).join('')}</ul></div>
+          <div><b>Airbnb picks</b><ul class="stay-list">${s.airbnb.map(h => row(h, s, '★ ' + h.score, '')).join('')}</ul></div>
+        </div>
+      </div>`).join('');
+
+    // label table cells with their column header so rows can stack as cards on phones
+    document.querySelectorAll('table').forEach(t => {
+      const heads = [...t.querySelectorAll('thead th')].map(th => th.textContent.trim());
+      t.querySelectorAll('tbody tr').forEach(tr => [...tr.children].forEach((td, i) => heads[i] && td.setAttribute('data-label', heads[i])));
+    });
+
+    // map
+    if (!window.L) { document.getElementById('tripmap').innerHTML = '<p class="small" style="padding:20px">Map needs an internet connection (Leaflet). Use the KML / My Maps link instead.</p>'; return; }
+    const map = L.map('tripmap', { scrollWheelZoom: false, zoomSnap: 0.25 }).setView([43.6, 16.9], 7);
+    // Esri tiles: no API key and no Referer requirement, so they load from file:// too
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    const all = [], btns = document.getElementById('map-layers');
+    T.layers.forEach(layer => {
+      const g = L.layerGroup(layer.pois.map(p => {
+        const m = L.circleMarker([p.lat, p.lng], { radius: p.kind === 'stay' ? 9 : 6, color: '#111', weight: 1.5, fillColor: layer.color, fillOpacity: .95 });
+        m.bindPopup(`<b>${esc(p.name)}</b><br><span style="opacity:.7">${esc(layer.name)} · ${esc(p.kind)}</span><br>${esc(p.note)}<br>` +
+          `${a('https://www.google.com/maps/search/?api=1&query=' + p.lat + ',' + p.lng, 'Open in Google Maps')} · ` +
+          `${a('https://www.google.com/maps/dir/?api=1&destination=' + p.lat + ',' + p.lng, 'Directions')}`);
+        all.push([p.lat, p.lng]);
+        return m;
+      })).addTo(map);
+      const b = document.createElement('button');
+      b.innerHTML = `<i style="background:${layer.color}"></i>${esc(layer.name)}`;
+      b.onclick = () => { if (map.hasLayer(g)) { map.removeLayer(g); b.classList.add('off'); } else { g.addTo(map); b.classList.remove('off'); } };
+      btns.appendChild(b);
+    });
+    // rough route line in trip order
+    L.polyline([[43.5389,16.2980],[43.5081,16.4402],[44.9019,15.6097],[43.5596,16.5234],[43.5081,16.4402],[43.4447,16.6886],[43.5033,16.4413],[43.1715,16.4405],[43.1842,16.5945],[43.1715,16.4405],[42.6580,18.0850],[43.1566,17.6078],[43.3373,17.8150],[42.6415,18.1070],[42.5614,18.2682]],
+      { color: '#d46a4c', weight: 2, opacity: .6, dashArray: '6 6' }).addTo(map);
+    map.fitBounds(all, { padding: [20, 20] });
+  })();
+  </script>
+</body>
+</html>

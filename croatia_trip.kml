@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Croatia + Herzegovina · Oct 9–19</name>
+<Style id="s0"><IconStyle><color>ff4c6ad4</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 10 · Split</name>
+<Placemark><name>Split Airport (SPU)</name><description>[hub] Arrival. ~35 min / 24 km to Old Town by car; airport shuttle bus ~45 min.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.298,43.5389,0</coordinates></Point></Placemark>
+<Placemark><name>Diocletian&#x27;s Palace – Peristyle</name><description>[culture] Heart of the palace. Go at night too — lit up, live klapa singing some evenings.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4402,43.5081,0</coordinates></Point></Placemark>
+<Placemark><name>Cathedral of St. Domnius &amp; Bell Tower</name><description>[culture] Climb the bell tower for the best Old Town rooftop view.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4405,43.5078,0</coordinates></Point></Placemark>
+<Placemark><name>Palace Cellars (Substructures)</name><description>[culture] Rain-proof; Game of Thrones filming location.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.44,43.5076,0</coordinates></Point></Placemark>
+<Placemark><name>Golden Gate &amp; Grgur Ninski statue</name><description>[culture] Rub the statue&#x27;s toe for luck.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4398,43.5093,0</coordinates></Point></Placemark>
+<Placemark><name>Riva Promenade</name><description>[relax] Evening stroll + coffee.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4385,43.5075,0</coordinates></Point></Placemark>
+<Placemark><name>Green Market (Pazar)</name><description>[food] Morning produce, figs, cheese, dried lavender. [added]</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4415,43.5087,0</coordinates></Point></Placemark>
+<Placemark><name>Vidilica Café (Marjan viewpoint)</name><description>[nature] 15-min stair climb from Varoš; sunset view over Split. [added]</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4299,43.5095,0</coordinates></Point></Placemark>
+<Placemark><name>Marjan – Telegrin summit</name><description>[nature] Top of Marjan; full loop 2–3 h.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4133,43.5087,0</coordinates></Point></Placemark>
+<Placemark><name>Kasjuni Beach</name><description>[relax] Quieter Marjan beach if warm. [added]</description><styleUrl>#s0</styleUrl><Point><coordinates>16.4025,43.504,0</coordinates></Point></Placemark>
+<Placemark><name>Salona Archaeological Park</name><description>[alt] Roman provincial capital ruins, 15 min from Split.</description><styleUrl>#s0</styleUrl><Point><coordinates>16.483,43.539,0</coordinates></Point></Placemark>
+<Placemark><name>Bačvice Beach</name><description>[relax] City beach; play picigin. [added]</description><styleUrl>#s0</styleUrl><Point><coordinates>16.447,43.502,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s1"><IconStyle><color>ff6ba987</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 11 · Plitvice</name>
+<Placemark><name>Plitvice – Entrance 1</name><description>[nature] Program H starts from Entrance 2 (bus); Program C from Entrance 1. Arrive by 8–9 am.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.6097,44.9019,0</coordinates></Point></Placemark>
+<Placemark><name>Plitvice – Entrance 2</name><description>[nature] Start of Program H.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.6222,44.8813,0</coordinates></Point></Placemark>
+<Placemark><name>Veliki Slap (Great Waterfall)</name><description>[nature] 78 m — tallest in Croatia.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.61,44.9031,0</coordinates></Point></Placemark>
+<Placemark><name>Kozjak Lake boat (P1–P2)</name><description>[nature] Electric boat crossing, included in ticket.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.618,44.88,0</coordinates></Point></Placemark>
+<Placemark><name>Galovac &amp; Upper Lakes</name><description>[nature] Best cascades; autumn colour peak mid-Oct.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.601,44.87,0</coordinates></Point></Placemark>
+<Placemark><name>Viewpoint over Lower Lakes (Kozjačka)</name><description>[nature] Classic postcard shot near Entrance 1.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.609,44.9005,0</coordinates></Point></Placemark>
+<Placemark><name>Rastoke (Slunj)</name><description>[alt] Water-mill village, ~30 min north of park.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.5808,45.1224,0</coordinates></Point></Placemark>
+<Placemark><name>Barać Caves</name><description>[alt] Rain fallback, ~25 min from park.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.5669,45.0119,0</coordinates></Point></Placemark>
+<Placemark><name>Restaurant Lička Kuća</name><description>[food] Lamb &amp; Lika potatoes by Entrance 1. [added]</description><styleUrl>#s1</styleUrl><Point><coordinates>15.608,44.902,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s2"><IconStyle><color>ff41a4d9</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 12 · Drive south</name>
+<Placemark><name>Krka NP – Skradinski Buk</name><description>[alt] [added] Right off the A1; big travertine falls. Only if you want more waterfalls — adds ~1.5 h.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.963,43.805,0</coordinates></Point></Placemark>
+<Placemark><name>Šibenik – St. James Cathedral</name><description>[alt] UNESCO cathedral; prettier old town, more detour.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.8889,43.7367,0</coordinates></Point></Placemark>
+<Placemark><name>Trogir Old Town</name><description>[culture] UNESCO island town; lunch on the waterfront.</description><styleUrl>#s2</styleUrl><Point><coordinates>16.251,43.517,0</coordinates></Point></Placemark>
+<Placemark><name>Kamerlengo Fortress</name><description>[culture] Trogir&#x27;s fortress walk-up.</description><styleUrl>#s2</styleUrl><Point><coordinates>16.248,43.516,0</coordinates></Point></Placemark>
+<Placemark><name>Klis Fortress</name><description>[culture] Plitvice → Klis 2 h 18 min; Klis → Split 20 min. Go for sunset.</description><styleUrl>#s2</styleUrl><Point><coordinates>16.5234,43.5596,0</coordinates></Point></Placemark>
+<Placemark><name>Restoran Perlica (Klis)</name><description>[food] Spit-roast lamb (Klis is famous for it). [added]</description><styleUrl>#s2</styleUrl><Point><coordinates>16.526,43.562,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s3"><IconStyle><color>ff3a50e0</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 13 · Omiš &amp; Cetina</name>
+<Placemark><name>Omiš Old Town</name><description>[culture] Split → Omiš 41 min / 25 km.</description><styleUrl>#s3</styleUrl><Point><coordinates>16.6886,43.4447,0</coordinates></Point></Placemark>
+<Placemark><name>Cetina rafting put-in (Penšići area)</name><description>[adventure] Half-day rafting, 3–4 h; operators pick up in Omiš.</description><styleUrl>#s3</styleUrl><Point><coordinates>16.77,43.44,0</coordinates></Point></Placemark>
+<Placemark><name>Radmanove Mlinice</name><description>[food] Riverside mill restaurant — rafting take-out. Trout!</description><styleUrl>#s3</styleUrl><Point><coordinates>16.727,43.445,0</coordinates></Point></Placemark>
+<Placemark><name>Zipline Omiš</name><description>[adventure] 8 lines over the canyon, ~3 h incl. transfer.</description><styleUrl>#s3</styleUrl><Point><coordinates>16.7,43.448,0</coordinates></Point></Placemark>
+<Placemark><name>Fortica (Starigrad) Fortress</name><description>[adventure] Steep ~1 h hike, huge canyon/sea view.</description><styleUrl>#s3</styleUrl><Point><coordinates>16.696,43.446,0</coordinates></Point></Placemark>
+<Placemark><name>Mirabela Fortress</name><description>[culture] Easy 10-min climb from town.</description><styleUrl>#s3</styleUrl><Point><coordinates>16.69,43.445,0</coordinates></Point></Placemark>
+<Placemark><name>Gubavica Waterfall</name><description>[nature] Canyon waterfall viewpoint above Zadvarje. [added]</description><styleUrl>#s3</styleUrl><Point><coordinates>16.8898,43.4338,0</coordinates></Point></Placemark>
+<Placemark><name>Biokovo Skywalk</name><description>[alt] Glass platform, ~1 h 15 from Omiš via Makarska. Check park road hours/wind.</description><styleUrl>#s3</styleUrl><Point><coordinates>17.058,43.32,0</coordinates></Point></Placemark>
+<Placemark><name>Makarska</name><description>[alt] Base town for Biokovo. [added]</description><styleUrl>#s3</styleUrl><Point><coordinates>17.0178,43.2969,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s4"><IconStyle><color>ffb8a66b</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 14 · Hvar Town</name>
+<Placemark><name>Split Ferry Port</name><description>[hub] Catamaran to Hvar Town ~1 h 05 (Jadrolinija / Kapetan Luka / TP Line).</description><styleUrl>#s4</styleUrl><Point><coordinates>16.4413,43.5033,0</coordinates></Point></Placemark>
+<Placemark><name>Hvar Town catamaran pier</name><description>[hub] Arrival.</description><styleUrl>#s4</styleUrl><Point><coordinates>16.4405,43.1715,0</coordinates></Point></Placemark>
+<Placemark><name>St. Stephen&#x27;s Square &amp; Cathedral</name><description>[culture] Largest square in Dalmatia.</description><styleUrl>#s4</styleUrl><Point><coordinates>16.442,43.1722,0</coordinates></Point></Placemark>
+<Placemark><name>Fortica (Španjola) Hvar</name><description>[nature] 20-min climb; sunset over Pakleni Islands.</description><styleUrl>#s4</styleUrl><Point><coordinates>16.441,43.1745,0</coordinates></Point></Placemark>
+<Placemark><name>Franciscan Monastery</name><description>[culture] Seaside cloister, Last Supper painting.</description><styleUrl>#s4</styleUrl><Point><coordinates>16.4455,43.1695,0</coordinates></Point></Placemark>
+<Placemark><name>Arsenal &amp; Renaissance Theatre</name><description>[culture] One of Europe&#x27;s oldest public theatres (1612). [added]</description><styleUrl>#s4</styleUrl><Point><coordinates>16.4412,43.1717,0</coordinates></Point></Placemark>
+<Placemark><name>Pakleni Islands – Palmižana</name><description>[relax] Taxi boat 15–20 min if sea is calm.</description><styleUrl>#s4</styleUrl><Point><coordinates>16.396,43.163,0</coordinates></Point></Placemark>
+<Placemark><name>Pokonji Dol beach</name><description>[relax] 20-min coastal walk east of town.</description><styleUrl>#s4</styleUrl><Point><coordinates>16.461,43.164,0</coordinates></Point></Placemark>
+<Placemark><name>Hula Hula Beach Bar</name><description>[food] Sunset drinks, west promenade. [added]</description><styleUrl>#s4</styleUrl><Point><coordinates>16.433,43.1686,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s5"><IconStyle><color>ffa08f5b</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 15 · Hvar Island loop</name>
+<Placemark><name>Velo Grablje</name><description>[nature] Abandoned lavender village; Konoba Zbondini. 15 min from town.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.508,43.17,0</coordinates></Point></Placemark>
+<Placemark><name>Malo Grablje</name><description>[nature] Ghost village; Konoba Stori Komin. [route option]</description><styleUrl>#s5</styleUrl><Point><coordinates>16.517,43.158,0</coordinates></Point></Placemark>
+<Placemark><name>Milna (Hvar)</name><description>[relax] Small cove village.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.491,43.1575,0</coordinates></Point></Placemark>
+<Placemark><name>Brusje</name><description>[nature] Hilltop village, herb &amp; olive country.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.477,43.186,0</coordinates></Point></Placemark>
+<Placemark><name>Dubovica Beach</name><description>[relax] Park at road, 15-min walk down. 15 min from Hvar Town.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.526,43.1537,0</coordinates></Point></Placemark>
+<Placemark><name>Stari Grad &amp; Tvrdalj</name><description>[culture] Oldest town in Croatia (384 BC). 25 min from Hvar Town.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.5945,43.1842,0</coordinates></Point></Placemark>
+<Placemark><name>Stari Grad Plain (UNESCO)</name><description>[nature] Greek field grid 2,400 years old; cycle or drive through.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.63,43.178,0</coordinates></Point></Placemark>
+<Placemark><name>Vrboska</name><description>[culture] &#x27;Little Venice&#x27; of Hvar; 15 min past Stari Grad.</description><styleUrl>#s5</styleUrl><Point><coordinates>16.675,43.181,0</coordinates></Point></Placemark>
+<Placemark><name>Jelsa</name><description>[food] Nice harbour for lunch. [added]</description><styleUrl>#s5</styleUrl><Point><coordinates>16.6932,43.1618,0</coordinates></Point></Placemark>
+<Placemark><name>Sveta Nedjelja</name><description>[adventure] Via Pitve tunnel; cliff climbing, vineyards (Zlatan Otok winery).</description><styleUrl>#s5</styleUrl><Point><coordinates>16.6102,43.1449,0</coordinates></Point></Placemark>
+<Placemark><name>Zlatan Otok Winery</name><description>[food] Tasting at Sveta Nedjelja. [added]</description><styleUrl>#s5</styleUrl><Point><coordinates>16.612,43.144,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s6"><IconStyle><color>ffc98ea8</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 16–17 · Dubrovnik</name>
+<Placemark><name>Dubrovnik Gruž Port</name><description>[hub] Catamaran from Hvar ~3 h 30–4 h; taxi/bus to Pile 15 min.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.085,42.658,0</coordinates></Point></Placemark>
+<Placemark><name>Pile Gate</name><description>[culture] Main entrance.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.107,42.6415,0</coordinates></Point></Placemark>
+<Placemark><name>Stradun</name><description>[culture] Main street.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1098,42.641,0</coordinates></Point></Placemark>
+<Placemark><name>Old Port</name><description>[culture] Boats to Lokrum leave here.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1135,42.6405,0</coordinates></Point></Placemark>
+<Placemark><name>Cable Car lower station</name><description>[hub] 4 min up.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.114,42.643,0</coordinates></Point></Placemark>
+<Placemark><name>Mount Srđ / Fort Imperial</name><description>[nature] Hike 45–60 min or cable car; go for sunset.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.115,42.648,0</coordinates></Point></Placemark>
+<Placemark><name>City Walls entrance (Pile)</name><description>[culture] Start 8 am opening; 2 km loop, 1.5–2 h.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1073,42.6419,0</coordinates></Point></Placemark>
+<Placemark><name>Minčeta Tower</name><description>[culture] Highest point on the walls.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1085,42.6428,0</coordinates></Point></Placemark>
+<Placemark><name>Fort Lovrijenac</name><description>[culture] Included with walls ticket.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.104,42.641,0</coordinates></Point></Placemark>
+<Placemark><name>Lokrum Island</name><description>[nature] 15-min ferry; botanical garden, Dead Sea lake, peacocks.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.121,42.627,0</coordinates></Point></Placemark>
+<Placemark><name>Sea kayak launch (Pulitika / Pile)</name><description>[adventure] Kayak to Lokrum &amp; Betina cave, ~3 h.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.106,42.6417,0</coordinates></Point></Placemark>
+<Placemark><name>Rector&#x27;s Palace</name><description>[culture] Rain option.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1109,42.6403,0</coordinates></Point></Placemark>
+<Placemark><name>Maritime Museum (St. John Fortress)</name><description>[culture] Rain option.</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1137,42.6397,0</coordinates></Point></Placemark>
+<Placemark><name>Buža Bar</name><description>[relax] Cliff-side bar outside the walls. [added]</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1102,42.6388,0</coordinates></Point></Placemark>
+<Placemark><name>Banje Beach</name><description>[relax] Old Town view beach. [added]</description><styleUrl>#s6</styleUrl><Point><coordinates>18.1165,42.6415,0</coordinates></Point></Placemark>
+<Placemark><name>Trsteno Arboretum</name><description>[alt] 25 min north; windy-sea alternate.</description><styleUrl>#s6</styleUrl><Point><coordinates>17.975,42.712,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s7"><IconStyle><color>ff4a80c9</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 18 · Herzegovina</name>
+<Placemark><name>Kravica Waterfalls</name><description>[nature] Dubrovnik → Kravica ~2 h 15 incl. border.</description><styleUrl>#s7</styleUrl><Point><coordinates>17.6078,43.1566,0</coordinates></Point></Placemark>
+<Placemark><name>Počitelj</name><description>[culture] Ottoman fortress village, 20 min from Kravica.</description><styleUrl>#s7</styleUrl><Point><coordinates>17.7314,43.1339,0</coordinates></Point></Placemark>
+<Placemark><name>Blagaj Tekke</name><description>[alt] Dervish house at Buna spring; 20 min from Mostar.</description><styleUrl>#s7</styleUrl><Point><coordinates>17.9024,43.2567,0</coordinates></Point></Placemark>
+<Placemark><name>Stari Most (Old Bridge)</name><description>[culture] Watch divers; Kujundžiluk bazaar.</description><styleUrl>#s7</styleUrl><Point><coordinates>17.815,43.3373,0</coordinates></Point></Placemark>
+<Placemark><name>Koski Mehmed Pasha Mosque minaret</name><description>[culture] Best bridge viewpoint.</description><styleUrl>#s7</styleUrl><Point><coordinates>17.8144,43.3393,0</coordinates></Point></Placemark>
+<Placemark><name>Crooked Bridge (Kriva Ćuprija)</name><description>[culture] Tiny predecessor to Stari Most. [added]</description><styleUrl>#s7</styleUrl><Point><coordinates>17.8138,43.3383,0</coordinates></Point></Placemark>
+<Placemark><name>Kotor, Montenegro</name><description>[alt] Alternative day trip instead of Bosnia.</description><styleUrl>#s7</styleUrl><Point><coordinates>18.7712,42.4247,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s8"><IconStyle><color>ff78838a</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 19 · Departure</name>
+<Placemark><name>Cavtat Riva</name><description>[relax] If late flight. 10 min to airport.</description><styleUrl>#s8</styleUrl><Point><coordinates>18.218,42.5808,0</coordinates></Point></Placemark>
+<Placemark><name>Račić Mausoleum</name><description>[culture] Meštrović-designed, on Cavtat peninsula.</description><styleUrl>#s8</styleUrl><Point><coordinates>18.214,42.5836,0</coordinates></Point></Placemark>
+<Placemark><name>Dubrovnik Airport (DBV)</name><description>[hub] Old Town → airport 32 min / 22 km.</description><styleUrl>#s8</styleUrl><Point><coordinates>18.2682,42.5614,0</coordinates></Point></Placemark>
+</Folder>
+<Style id="s9"><IconStyle><color>ffffffff</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Stays (neighbourhoods)</name>
+<Placemark><name>STAY Oct 10–11 · Split Old Town</name><description>[stay] Inside/next to the palace. Walkable everything.</description><styleUrl>#s9</styleUrl><Point><coordinates>16.44,43.5085,0</coordinates></Point></Placemark>
+<Placemark><name>STAY Oct 11–12 · Plitvice (Mukinje / Rastovača)</name><description>[stay] Walk or 5-min drive to Entrance 2 — early start.</description><styleUrl>#s9</styleUrl><Point><coordinates>15.628,44.885,0</coordinates></Point></Placemark>
+<Placemark><name>STAY Oct 12–14 · Split (Varoš / Old Town)</name><description>[stay] Pick a place with parking if you still have the car.</description><styleUrl>#s9</styleUrl><Point><coordinates>16.434,43.51,0</coordinates></Point></Placemark>
+<Placemark><name>STAY Oct 14–16 · Hvar Town</name><description>[stay] The splurge nights.</description><styleUrl>#s9</styleUrl><Point><coordinates>16.443,43.171,0</coordinates></Point></Placemark>
+<Placemark><name>STAY Oct 16–19 · Dubrovnik (Ploče / Pile)</name><description>[stay] Just outside the walls = easier luggage + views.</description><styleUrl>#s9</styleUrl><Point><coordinates>18.115,42.642,0</coordinates></Point></Placemark>
+</Folder>
+</Document></kml>

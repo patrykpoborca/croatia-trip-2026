@@ -1,0 +1,779 @@
+{
+"palace": {
+"r": "4.7",
+"c": "93,622 reviews",
+"k": "",
+"tp": [
+"crypt:218",
+"roman architecture:180",
+"bell tower:271",
+"alleys:37",
+"cathedral:533",
+"palace:503",
+"treasury:44"
+],
+"u": "/maps/place/Diocletian's+Palace"
+},
+"belltower": {
+"r": "4.6",
+"c": "7,584 reviews",
+"k": "",
+"tp": [],
+"u": "/maps/place/Saint+Domnius%E2%80%99+Cathedral"
+},
+"cellars": {
+"r": "4.5",
+"c": "1,833 reviews",
+"k": "",
+"tp": [
+"vaults:12",
+"architecture:13",
+"dungeon:8",
+"cellars:33",
+"vaulted ceilings:2",
+"underground:6",
+"palace foundations:2"
+],
+"u": "/maps/search/Diocletian's%20Cellars%20Split"
+},
+"goldengate": {
+"r": "4.7",
+"c": "1,392 reviews",
+"k": "",
+"tp": [
+"dioklecians palac:32",
+"big toe:65",
+"statue:68",
+"making a wish:19",
+"liturgy:14",
+"rubbing the toe:21",
+"golden gate:2"
+],
+"u": "/maps/search/Gregory%20of%20Nin%20statue%20Split"
+},
+"riva": {
+"r": "4.7",
+"c": "25,431 reviews",
+"k": "",
+"tp": [
+"palm trees:197",
+"boulevard:47",
+"waterfront:144",
+"lively atmosphere:168",
+"sea view:68",
+"harbour:51",
+"crowded:135"
+],
+"u": "/maps/search/Riva%20Split"
+},
+"pazar": {
+"r": "4.4",
+"c": "3,463 reviews",
+"k": "",
+"tp": [
+"fresh produce:42",
+"olive oil:40",
+"local produce:49",
+"souvenirs:74",
+"fresh vegetables:53",
+"peaches:16",
+"fresh fruit:28"
+],
+"u": "/maps/place/Green+Market"
+},
+"marjan": {
+"n": "Marjan Park Viewpoint",
+"r": "4.8",
+"c": "384",
+"k": "Observation deck",
+"tp": [],
+"u": "/maps/place/Marjan+Park+Viewpoint"
+},
+"salona": {
+"r": "4.6",
+"c": "450 reviews",
+"k": "",
+"tp": [
+"basilica:8",
+"amphitheater:22",
+"sarcophagus:9",
+"roman ruins:3",
+"early christianity:6",
+"roman history:6",
+"free car park:2"
+],
+"u": "/maps/search/Salona%20Archaeological%20Park"
+},
+"bacvice": {
+"r": "4.0",
+"c": "5,445 reviews",
+"k": "",
+"tp": [
+"picigin:35",
+"dirty sand:20",
+"proximity to the port:5",
+"shallow water:98",
+"sandy beach:259",
+"crowded beach:42",
+"crib:17"
+],
+"u": "/maps/place/Bacvice+Beach"
+},
+"plitvice": {
+"r": "4.8",
+"c": "133,322 reviews",
+"k": "",
+"tp": [
+"waterfalls:3205",
+"lakes:1628",
+"boat ride:870",
+"colour of the water:162",
+"nature in art:91",
+"crowds:1196",
+"paths:459"
+],
+"u": "/maps/place/Plitvice+Lakes+National+Park"
+},
+"velikislap": {
+"r": "4.8",
+"c": "2,064 reviews",
+"k": "",
+"tp": [
+"boat ride:37",
+"waterfall:68",
+"plitvice lakes:3",
+"national park:76",
+"spring:14",
+"highest waterfall:4",
+"nature:21"
+],
+"u": "/maps/place/Great+Waterfall"
+},
+"rastoke": {
+"r": "4.6",
+"c": "1,049 reviews",
+"k": "",
+"tp": [
+"waterfalls:82",
+"nature:44",
+"village:30",
+"historical monument:3",
+"fairytale-like:4",
+"mill:5",
+"cozy town:2"
+],
+"u": "/maps/place/Stari+Mlin+(Old+Mill)"
+},
+"barac": {
+"r": "4.7",
+"c": "785 reviews",
+"k": "",
+"tp": [
+"bats:37",
+"plitvice lakes:15",
+"tour guide:47",
+"friendly staff:18",
+"fascinating caves:2",
+"cave size:4",
+"informative guide:6"
+],
+"u": "/maps/search/Bara%C4%87%20Caves"
+},
+"lickakuca": {
+"r": "4.2",
+"c": "3,173 reviews",
+"k": "",
+"tp": [
+"lamb:122",
+"veal:69",
+"live music:5",
+"lamb under the bell:18",
+"tortellini:13",
+"outdoor seating:5",
+"traditional food:51"
+],
+"u": "/maps/place/Li%C4%8Dka+ku%C4%87a+Restaurant+-+Plitvice+Lakes"
+},
+"klis": {
+"r": "4.5",
+"c": "12,438 reviews",
+"k": "",
+"tp": [
+"views:950",
+"croatian history:26",
+"sunset views:42",
+"olive museum:32",
+"magnificent view:69",
+"panorama:82",
+"entrance fee:139"
+],
+"u": "/maps/place/Klis+Fortress"
+},
+"trogir": {
+"r": "4.8",
+"c": "13,406 reviews",
+"k": "",
+"tp": [
+"alleys:178",
+"cathedral:124",
+"unesco world heritage site:93",
+"old town:447",
+"medieval town:22",
+"not crowded:47",
+"atmospheric streets:32"
+],
+"u": "/maps/place/Trogir+Old+Town"
+},
+"krka": {
+"r": "4.6",
+"c": "13,461 reviews",
+"k": "",
+"tp": [
+"boat ride:481",
+"waterfalls:388",
+"crowd:212",
+"swimming prohibited:86",
+"crowded:215",
+"hiking trails:15",
+"entrance fee:78"
+],
+"u": "/maps/place/Skradinski+Buk+waterfall"
+},
+"sibenik": {
+"r": "4.6",
+"c": "9,774 reviews",
+"k": "",
+"tp": [],
+"u": "/maps/place/Cathedral+of+St.+James"
+},
+"rafting": {
+"r": "4.8",
+"c": "156 reviews",
+"k": "",
+"tp": [
+"river:19",
+"cliff jumping:5",
+"rafting:16",
+"rafting with teenagers:2",
+"swimming through a cave:2",
+"skipper:6",
+"cave visit:2"
+],
+"u": "/maps/place/Rafting+Cetina"
+},
+"zipline": {
+"r": "4.9",
+"c": "2,942 reviews",
+"k": "",
+"tp": [
+"zipline:158",
+"guides:254",
+"views:228",
+"tandem ziplining:9",
+"patient guides:10",
+"instructors:58",
+"funny guides:9"
+],
+"u": "/maps/place/Zipline+Croatia"
+},
+"canyoning": {
+"r": "4.9",
+"c": "408 reviews",
+"k": "",
+"tp": [
+"rafting:58",
+"canyoning:9",
+"river:40",
+"cliff jumping:5",
+"skippers:9",
+"kind guide:10",
+"crazy guides:2"
+],
+"u": "/maps/place/Rafting+%26+Canyoning+Cetina+-+Mirabella+Tours"
+},
+"forticaomis": {
+"n": "Starigrad Fortress",
+"r": "",
+"c": "",
+"k": "",
+"tp": [],
+"u": "/maps/search/Fortress%20Starigrad%20Fortica%20Omis"
+},
+"mirabela": {
+"r": "4.7",
+"c": "4,650 reviews",
+"k": "",
+"tp": [
+"ladder:198",
+"tower:123",
+"view of the city:71",
+"view of the sea:28",
+"outlook:528",
+"steep stairs:25",
+"climbing the tower:11"
+],
+"u": "/maps/search/Mirabela%20Fortress%20Omi%C5%A1"
+},
+"radmanove": {
+"r": "4.2",
+"c": "3,808 reviews",
+"k": "",
+"tp": [
+"beer garden:17",
+"brown trout:25",
+"outdoor seating:5",
+"Domácí Chleba Z Pece:13",
+"frog legs:8",
+"pašticada:30",
+"veal under the bell:5"
+],
+"u": "/maps/place/Radmanove+mlinice"
+},
+"gubavica": {
+"r": "4.7",
+"c": "730 reviews",
+"k": "",
+"tp": [
+"waterfall:94",
+"canyon:50",
+"viewpoint:39",
+"viewing terraces:13",
+"canyoning:3",
+"canyon with waterfall:2",
+"bathing under the waterfall:2"
+],
+"u": "/maps/place/Vodopad+Gubavica+-+Vidikovac+48"
+},
+"biokovo": {
+"r": "4.8",
+"c": "7,155 reviews",
+"k": "",
+"tp": [
+"hairpin bends:41",
+"skywalk:73",
+"glass floor:24",
+"wild horses:74",
+"views:919",
+"viewing terrace:28",
+"narrow road:90"
+],
+"u": "/maps/place/Skywalk+Biokovo"
+},
+"hvartown": {
+"n": "Trg svetog Stjepana",
+"r": "",
+"c": "",
+"k": "",
+"tp": [],
+"u": "/maps/place/Trg+svetog+Stjepana,+21450,+Hvar,+Croatia"
+},
+"forticahvar": {
+"r": "4.6",
+"c": "6,329 reviews",
+"k": "",
+"tp": [
+"view of the city:56",
+"sunset views:65",
+"prison:111",
+"gardens:75",
+"view from the fortress:20",
+"entrance fee:137",
+"stunning views:45"
+],
+"u": "/maps/place/%C5%A0panjola+Fortress"
+},
+"franciscan": {
+"r": "4.5",
+"c": "556 reviews",
+"k": "",
+"tp": [],
+"u": "/maps/place/Franciscan+Monastery"
+},
+"arsenal": {
+"r": "4.0",
+"c": "90 reviews",
+"k": "",
+"tp": [
+"theatre:15",
+"fortress:3",
+"14th century:2",
+"historical sites:3",
+"exhibition:6",
+"galleon repair:2",
+"17th century:2"
+],
+"u": "/maps/place/Hvar+Arsenal"
+},
+"pakleni": {
+"r": "4.8",
+"c": "193 reviews",
+"k": "",
+"tp": [
+"crystal clear sea:5",
+"coves:4",
+"turquoise sea:2",
+"bays:5",
+"day boat trip:2",
+"wild coast:2",
+"pretty islands:2"
+],
+"u": "/maps/place/Pakleni+Islands"
+},
+"pokonji": {
+"r": "4.5",
+"c": "1,323 reviews",
+"k": "",
+"tp": [
+"umbrella:63",
+"pebbles:50",
+"sea urchins:16",
+"pebble beach:22",
+"sunbeds:25",
+"sunbed rental:9",
+"busy beach:12"
+],
+"u": "/maps/search/Pokonji%20Dol%20beach"
+},
+"hulahula": {
+"r": "4.1",
+"c": "2,709 reviews",
+"k": "",
+"tp": [
+"sunset:288",
+"cash only:47",
+"sea view:5",
+"sunbeds:27",
+"people watching:3",
+"party:143",
+"sunset drinks:8"
+],
+"u": "/maps/search/Hula%20Hula%20Beach%20Bar%20Hvar"
+},
+"grablje": {
+"r": "4.8",
+"c": "291 reviews",
+"k": "",
+"tp": [
+"abandoned village:20",
+"lamb:12",
+"homemade wine:7",
+"octopus under the bell:3",
+"cash only:4",
+"home made apple strudel:2",
+"homemade grappa:2"
+],
+"u": "/maps/place/Konoba+Stori+Komin"
+},
+"dubovica": {
+"r": "4.7",
+"c": "1,468 reviews",
+"k": "",
+"tp": [
+"access to the beach:27",
+"pebble beach:24",
+"walk to the beach:27",
+"hike:63",
+"stone beach:8",
+"difficult access:16",
+"steep descent:13"
+],
+"u": "/maps/place/Pla%C5%BEa+Dubovica"
+},
+"starigrad": {
+"r": "4.6",
+"c": "3,407 reviews",
+"k": "",
+"tp": [
+"garden:168",
+"pond:36",
+"renaissance architecture:27",
+"fish pond:18",
+"cash only:8",
+"peaceful atmosphere:22",
+"entrance fee:45"
+],
+"u": "/maps/place/Fortress+of+Petar+Hektorovi%C4%87"
+},
+"plain": {
+"r": "4.4",
+"c": "102 reviews",
+"k": "",
+"tp": [
+"landscape:7",
+"unesco world heritage site:6",
+"atmosphere of hvar:2",
+"stone walls:2",
+"wine tasting:2",
+"cycling:2",
+"island:3"
+],
+"u": "/maps/place/Stari+Grad+Plain"
+},
+"nedjelja": {
+"r": "4.4",
+"c": "735 reviews",
+"k": "",
+"tp": [
+"underwater cellar:2",
+"hvar gregada:2",
+"wine cave:2",
+"lava cake:2",
+"local wine:5",
+"boat access:5",
+"top-quality wines:5"
+],
+"u": "/maps/place/Bilo+Idro"
+},
+"oldtown": {
+"n": "Stradun",
+"r": "4.8",
+"c": "912 reviews",
+"k": "Notable street",
+"tp": [
+"old town:32",
+"souvenir shops:18",
+"cobbled street:3",
+"charming alleys:2"
+],
+"u": "/maps/search/Stradun%20Dubrovnik"
+},
+"srd": {
+"r": "4.3",
+"c": "11,519 reviews",
+"k": "",
+"tp": [
+"sunset views:416",
+"view of the city:83",
+"view of old town:43",
+"views of dubrovnik:2",
+"magnificent view:81",
+"fort:53",
+"viewing platforms:13"
+],
+"u": "/maps/place/Dubrovnik+Cable+Car"
+},
+"buza": {
+"r": "4.1",
+"c": "3,593 reviews",
+"k": "",
+"tp": [
+"sunset views:309",
+"view:521",
+"cash only:157",
+"sea view:59",
+"city walls:85",
+"people watching:8",
+"cliff jumping:84"
+],
+"u": "/maps/place/Bu%C5%BEa+Bar"
+},
+"walls": {
+"r": "4.5",
+"c": "1,847 reviews",
+"k": "",
+"tp": [
+"city walls:177",
+"stairs:110",
+"terracotta:12",
+"rampart:23",
+"city views:37",
+"views of the sea:12",
+"dubrovnik pass:6"
+],
+"u": "/maps/place/Walls+of+Dubrovnik"
+},
+"lovrijenac": {
+"r": "4.6",
+"c": "10,533 reviews",
+"k": "",
+"tp": [
+"cannons:41",
+"views of the old town:137",
+"city walls:42",
+"view of the sea:36",
+"ramparts:23",
+"king's landing:22",
+"dubrovnik pass:17"
+],
+"u": "/maps/place/Tvr%C4%91ava+Lovrjenac+%2F+Lovrjenac+Fortress"
+},
+"lokrum": {
+"r": "4.6",
+"c": "991 reviews",
+"k": "",
+"tp": [
+"peacocks:165",
+"monastery:77",
+"botanical garden:69",
+"fort:31",
+"rabbits:20",
+"iron throne:10",
+"boat ride:30"
+],
+"u": "/maps/place/Lokrum"
+},
+"kayak": {
+"r": "5.0",
+"c": "2,215 reviews",
+"k": "",
+"tp": [
+"boat tour:147",
+"blue cave:75",
+"cave exploration:70",
+"caves:418",
+"green cave:27",
+"swimming in caves:24",
+"cliff jumping:19"
+],
+"u": "/maps/place/Dubrovnik+Blue+Cave"
+},
+"rector": {
+"r": "4.3",
+"c": "3,735 reviews",
+"k": "",
+"tp": [
+"renaissance architecture:39",
+"dubrovnik pass:11",
+"dungeon:12",
+"armoury:3",
+"iron chests:2",
+"courtyard:18",
+"palace:38"
+],
+"u": "/maps/place/Rector's+Palace"
+},
+"maritime": {
+"r": "4.1",
+"c": "946 reviews",
+"k": "",
+"tp": [
+"ship models:41",
+"maritime history:59",
+"city walls:23",
+"artifacts:9",
+"old maps:6",
+"defensive tower:7",
+"small museum:17"
+],
+"u": "/maps/place/Maritime+Museum"
+},
+"banje": {
+"r": "4.1",
+"c": "5,201 reviews",
+"k": "",
+"tp": [
+"sunbeds:98",
+"beach chairs:7",
+"sunset views:11",
+"beachfront location:34",
+"live music:11",
+"beach bar:33",
+"Oysters Rockefeller:6"
+],
+"u": "/maps/place/Banje+Beach+Restaurant+Lounge+%26+Club"
+},
+"trsteno": {
+"r": "4.5",
+"c": "4,111 reviews",
+"k": "",
+"tp": [
+"aqueduct:31",
+"plane trees:35",
+"cash only:61",
+"sea view:34",
+"garden:85",
+"peaceful atmosphere:29",
+"views:66"
+],
+"u": "/maps/place/Trsteno+Arboretum"
+},
+"kravica": {
+"r": "4.5",
+"c": "33,035 reviews",
+"k": "",
+"tp": [
+"waterfalls:1857",
+"swimming:1158",
+"crowded:466",
+"entrance fee:618",
+"natural wonder:118",
+"cold water:285",
+"clear water:118"
+],
+"u": "/maps/place/Kravica+Waterfall"
+},
+"pocitelj": {
+"r": "4.8",
+"c": "2,378 reviews",
+"k": "",
+"tp": [
+"village:126",
+"mosque:88",
+"pomegranate trees:26",
+"tower:83",
+"castle:34",
+"river views:9",
+"stone houses:13"
+],
+"u": "/maps/place/Po%C4%8Ditelj+Fortress"
+},
+"mostar": {
+"r": "4.8",
+"c": "61,310 reviews",
+"k": "",
+"tp": [
+"old bridge:650",
+"bazaar:173",
+"crowded:811",
+"historical texture:265",
+"must-see place:340",
+"neretva river:3",
+"slippery:144"
+],
+"u": "/maps/place/Old+Bridge+Mostar"
+},
+"koski": {
+"r": "4.4",
+"c": "1,117 reviews",
+"k": "",
+"tp": [],
+"u": "/maps/place/Koski+Mehmed+Pasha+Mosque"
+},
+"blagaj": {
+"r": "4.7",
+"c": "13,540 reviews",
+"k": "",
+"tp": [],
+"u": "/maps/place/Blagaj+Tekke"
+},
+"kotor": {
+"r": "4.8",
+"c": "691 reviews",
+"k": "",
+"tp": [
+"architecture:32",
+"city walls:24",
+"alleys:20",
+"cats:36",
+"cobblestone:28",
+"unesco world heritage site:16",
+"fortress:12"
+],
+"u": "/maps/place/Kotor+Old+Town+View"
+},
+"cavtat": {
+"r": "4.5",
+"c": "154 reviews",
+"k": "",
+"tp": [
+"Mausoleum of the Racic family:11",
+"cemetery:22",
+"steep path:3",
+"stonemasonry work:2",
+"sea view:2",
+"architecture:7",
+"art deco:2"
+],
+"u": "/maps/place/Mausoleum+of+the+Rachic+Family"
+}
+}
