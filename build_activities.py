@@ -32,7 +32,7 @@ for a in AD.A:
         directions=f"https://www.google.com/maps/dir/?api=1&destination={a['lat']},{a['lng']}",
     ))
 
-data = dict(days=[dict(id=d, date=dt, place=p, theme=t) for d, dt, p, t in AD.DAYS], acts=acts)
+data = dict(days=[dict(id=d, date=dt, place=p, theme=t, gap=getattr(AD, "FOOD_GAPS", {}).get(d, "")) for d, dt, p, t in AD.DAYS], acts=acts)
 tpl = (HERE / "activities_template.html").read_text()
 (HERE / "activities.html").write_text(tpl.replace("/*__DATA__*/", "window.ACT = " + json.dumps(data, ensure_ascii=False) + ";"))
 print(f"activities.html: {len(acts)} activities, {sum(len(x['images']) for x in acts)} images, {sum(1 for x in acts if x['rating'])} rated")

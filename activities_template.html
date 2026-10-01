@@ -178,7 +178,8 @@
       let list = acts.filter(a => a.day === state.day);
       if (state.cats.size) list = list.filter(a => state.cats.has(a.cat));
       if (state.favOnly) list = list.filter(a => fav.has(a.id));
-      $('grid').innerHTML = list.length ? list.map(card).join('') : `<p class="empty">Nothing here yet — ${state.favOnly ? 'tap ♡ on activities to shortlist them.' : 'clear the filters.'}</p>`;
+      $('grid').innerHTML = (list.length ? list.map(card).join('') : `<p class="empty">Nothing here yet — ${state.favOnly ? 'tap ♡ on activities to shortlist them.' : 'clear the filters.'}</p>`)
+        + (d.gap && !state.favOnly && (!state.cats.size || state.cats.has('food')) ? `<p class="empty">🍽️ ${esc(d.gap)}</p>` : '');
       $('grid').querySelectorAll('[data-open]').forEach(b => b.onclick = () => openAct(b.dataset.open));
       $('grid').querySelectorAll('[data-fav]').forEach(b => b.onclick = e => { e.stopPropagation(); toggleFav(b.dataset.fav); });
     }
@@ -221,9 +222,9 @@
             <button class="btn" data-mfav>${fav.has(a.id) ? '♥ Shortlisted' : '♡ Shortlist'}</button>
             <a class="btn ghost" href="${esc(a.maps)}" target="_blank" rel="noopener">Reviews & photos ↗</a>
             <a class="btn ghost" href="${esc(a.directions)}" target="_blank" rel="noopener">Directions ↗</a>
-            ${a.link ? `<a class="btn ghost" href="${esc(a.link)}" target="_blank" rel="noopener">Official info ↗</a>` : ''}
+            ${a.link ? `<a class="btn ghost" href="${esc(a.link)}" target="_blank" rel="noopener">${/^(Cooking class|Food tour)/.test(a.title) ? 'Book / details ↗' : 'Official info ↗'}</a>` : ''}
           </div>
-          <p class="fine">Review themes are paraphrased from Google Maps reviews (Sept 2026). Prices approximate.</p>
+          <p class="fine">${!/^(Cooking class|Food tour)/.test(a.title) ? 'Review themes are paraphrased from Google Maps reviews (Sept 2026).' : 'Review themes are paraphrased from booking-site reviews and blog write-ups (Oct 2026).'} Prices approximate.</p>
         </div>`;
       const m = $('modal');
       m.querySelector('.close').onclick = () => $('dlg').close();

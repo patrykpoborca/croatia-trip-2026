@@ -64,3 +64,18 @@ REVIEWS = {
 OPERATOR = {"rafting": "Rafting Cetina", "zipline": "Zipline Croatia", "canyoning": "Mirabella Tours", "grablje": "Konoba Stori Komin",
             "nedjelja": "Zlatan Otok winery", "cavtat": "Račić Mausoleum", "srd": "Dubrovnik Cable Car", "rastoke": "Rastoke Old Mill"}
 SKIP_RATING = {"kayak", "hvartown", "forticaomis"}  # scrape returned an unrelated or empty place
+
+# Food tours & cooking classes — paraphrased from booking-site reviews and blog write-ups (no Google Maps scrape)
+REVIEWS.update({
+    "splitcook": ("Reviewers love the personal attention from the chef, the market walk and how good the meal turns out.", "It takes most of a day — heavy for arrival day."),
+    "splitfoodtour": ("Called well organised, with places and dishes you wouldn't find yourself; the guide's history doubles as a walking tour.", "Quality depends on the guide; book a small group."),
+    "plitvicecook": ("A real family home kitchen — the peka lamb, rakija and farmhouse atmosphere are the draw.", "New listing with few reviews; timing after a full park day is tight."),
+    "omissoparnik": ("Hands-on and very local: soparnik is hard to find done properly anywhere else.", "Few reviews online; confirm October dates and the meeting point."),
+    "hvarfarmcook": ("Guests rave about picking ingredients in the garden and eating at sunset in the UNESCO fields.", "Small operation — may not run every day in October."),
+    "hvargrablje": ("Market-to-table with transfers included; the village setting is a highlight.", "Overlaps with the Stori Komin dinner — you may not want both."),
+    "dubkonavle": ("Reviewers praise the food, garden ingredients and hands-on cooking; small groups.", "A long half-day including the drive."),
+    "dubfoodtour": ("Rated 5/5 on TripAdvisor; small groups and knowledgeable local guides.", "Old Town prices; it's a tasting, not a sit-down dinner."),
+    "mostarcook": ("Rated 5/5 (few reviews); the host is praised as patient and fun, the dishes as delicious.", "Doesn't fit a Dubrovnik day trip without cutting stops."),
+    "mostarfoodtour": ("Covers the classics — burek, ćevapi, coffee and sweets — on a tip-based budget.", "Tip-based tours vary; quality depends on the guide on the day."),
+})
+SKIP_RATING |= {"splitcook", "splitfoodtour", "plitvicecook", "omissoparnik", "hvarfarmcook", "hvargrablje", "dubkonavle", "dubfoodtour", "mostarcook", "mostarfoodtour"}
