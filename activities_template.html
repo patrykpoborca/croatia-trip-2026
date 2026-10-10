@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="58 activities across 10 days — photos, Google ratings, review highlights, costs and tips." />
+  <meta name="description" content="75 activities across 10 days — maps, photos, Google ratings, review highlights, costs and tips." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Activity explorer · Croatia Oct 9–19" />
-  <meta property="og:description" content="58 activities across 10 days — photos, Google ratings, review highlights, costs and tips." />
+  <meta property="og:description" content="75 activities across 10 days — maps, photos, Google ratings, review highlights, costs and tips." />
   <meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Plitvice_Lakes1.jpg/1280px-Plitvice_Lakes1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#111411" />
   <title>Activity Explorer | Croatia Oct 9–19</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
   <style>
     :root {
       --bg: #111411; --panel: #1b211c; --panel-2: #232b24; --ink: #f4efe4; --muted: #bcb4a4; --faint: #807768;
@@ -67,6 +68,20 @@
     .heart[aria-pressed="true"] { background: var(--accent); }
     .empty { color: var(--muted); padding: 40px 0; }
 
+    /* day map */
+    .daymap { position: relative; isolation: isolate; height: 360px; border-radius: var(--radius); border: 1px solid var(--line); overflow: hidden; margin: 0 0 20px; background: var(--panel); }
+    .daymap .hint { position: absolute; left: 12px; bottom: 10px; z-index: 500; font-size: 11px; color: var(--muted); background: rgba(17,20,17,.75); padding: 4px 9px; border-radius: 99px; pointer-events: none; }
+    .pin { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font: 800 12px/1 system-ui, sans-serif; color: #111; border: 2px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,.55); transition: transform .15s ease; }
+    .pin.hot { transform: scale(1.4); z-index: 1000; }
+    .leaflet-div-icon.pin-wrap { background: none; border: 0; }
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel-2); color: var(--ink); }
+    .leaflet-popup-content { margin: 10px 12px; font-size: 13px; line-height: 1.35; }
+    .leaflet-popup-content b { display: block; font-size: 14px; margin-bottom: 2px; }
+    .leaflet-popup-content button { margin-top: 8px; border: 0; border-radius: 99px; background: var(--accent); color: #fff; font-weight: 700; font-size: 12px; padding: 5px 11px; }
+    .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+    .num { position: absolute; left: 10px; top: 10px; z-index: 2; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font: 800 12px/1 system-ui, sans-serif; color: #111; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,.5); }
+    .card.hot { border-color: rgba(212,106,76,.8); }
+
     /* modal */
     dialog { width: min(1040px, calc(100vw - 24px)); max-height: calc(100vh - 24px); padding: 0; border: 1px solid var(--line); border-radius: 26px; background: var(--panel); color: var(--ink); overflow: hidden; }
     dialog::backdrop { background: rgba(0,0,0,.7); backdrop-filter: blur(4px); }
@@ -105,6 +120,7 @@
     footer { color: var(--faint); font-size: 12px; padding: 0 0 40px; }
 
     @media (max-width: 820px) {
+      .daymap { height: 260px; }
       .modal { grid-template-columns: 1fr; overflow-y: auto; }
       .gallery .main { min-height: 240px; }
       .detail { overflow: visible; }
@@ -125,12 +141,14 @@
   <main class="wrap">
     <div class="hero"><div><div class="eyebrow" id="h-date"></div><h2 id="h-place"></h2><p id="h-theme"></p></div></div>
     <div class="toolbar" id="toolbar"></div>
+    <div class="daymap" id="daymap" role="region" aria-label="Map of this day's activities"><span class="hint">Numbers match the cards · tap a pin for details</span></div>
     <div class="grid" id="grid"></div>
   </main>
   <div class="wrap"><footer>Photos: Wikimedia Commons (credited per image, licences as listed). Ratings and review themes: Google Maps, collected Sept 30 2026 and paraphrased. Prices are approximate — confirm before going. ♥ shortlist is saved in this browser only.</footer></div>
 
   <dialog id="dlg" aria-labelledby="d-title"><div class="modal" id="modal"></div></dialog>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
   <script>/*__DATA__*/</script>
   <script>
   (function () {
@@ -158,9 +176,10 @@
       $('toolbar').querySelectorAll('[data-cat]').forEach(b => b.onclick = () => { const c = b.dataset.cat; state.cats.has(c) ? state.cats.delete(c) : state.cats.add(c); update(); });
       $('favonly').onclick = () => { state.favOnly = !state.favOnly; update(); };
     }
-    function card(a) {
+    function card(a, i) {
       const img = a.images[0];
-      return `<article class="card">
+      return `<article class="card" data-card="${a.id}">
+        <span class="num" style="background:var(--${a.cat})" aria-hidden="true">${i + 1}</span>
         <button class="heart" aria-pressed="${fav.has(a.id)}" aria-label="Shortlist ${esc(a.title)}" data-fav="${a.id}">${fav.has(a.id) ? '♥' : '♡'}</button>
         <button class="open" data-open="${a.id}">
           ${img ? `<div class="thumb" style="background-image:url('${esc(img.src)}')">${a.images.length > 1 ? `<span class="n">📷 ${a.images.length}</span>` : ''}</div>` : `<div class="thumb none">${ICON[a.cat]}</div>`}
@@ -178,10 +197,53 @@
       let list = acts.filter(a => a.day === state.day);
       if (state.cats.size) list = list.filter(a => state.cats.has(a.cat));
       if (state.favOnly) list = list.filter(a => fav.has(a.id));
-      $('grid').innerHTML = (list.length ? list.map(card).join('') : `<p class="empty">Nothing here yet — ${state.favOnly ? 'tap ♡ on activities to shortlist them.' : 'clear the filters.'}</p>`)
+      $('grid').innerHTML = (list.length ? list.map((a, i) => card(a, i)).join('') : `<p class="empty">Nothing here yet — ${state.favOnly ? 'tap ♡ on activities to shortlist them.' : 'clear the filters.'}</p>`)
         + (d.gap && !state.favOnly && (!state.cats.size || state.cats.has('food')) ? `<p class="empty">🍽️ ${esc(d.gap)}</p>` : '');
       $('grid').querySelectorAll('[data-open]').forEach(b => b.onclick = () => openAct(b.dataset.open));
       $('grid').querySelectorAll('[data-fav]').forEach(b => b.onclick = e => { e.stopPropagation(); toggleFav(b.dataset.fav); });
+      $('grid').querySelectorAll('[data-card]').forEach(c => {
+        c.addEventListener('mouseenter', () => hot(c.dataset.card, true));
+        c.addEventListener('mouseleave', () => hot(c.dataset.card, false));
+      });
+      renderMap(list);
+    }
+
+    // map of the day's activities (Esri topo tiles, same as the trip deck)
+    let map = null, layer = null, markers = {};
+    function renderMap(list) {
+      if (!window.L) { $('daymap').style.display = 'none'; return; }
+      if (!map) {
+        map = L.map('daymap', { zoomSnap: 0.25, scrollWheelZoom: false });
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 18, attribution: 'Tiles © Esri — Esri, HERE, Garmin, FAO, NOAA, USGS, © OpenStreetMap contributors'
+        }).addTo(map);
+        layer = L.layerGroup().addTo(map);
+        map.on('click', () => map.scrollWheelZoom.enable());
+      }
+      layer.clearLayers(); markers = {};
+      list.forEach((a, i) => {
+        const icon = L.divIcon({ className: 'pin-wrap', iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -14],
+          html: `<div class="pin" data-pin="${a.id}" style="background:var(--${a.cat})">${i + 1}</div>` });
+        const m = L.marker([a.lat, a.lng], { icon, title: a.title, riseOnHover: true }).addTo(layer);
+        const pop = document.createElement('div');
+        pop.innerHTML = `<b>${i + 1}. ${esc(a.title)}</b>${CATS[a.cat]}${a.rating ? ` · ★ ${esc(a.rating)}` : ''} · ${esc(a.duration)}<br><button type="button">Details →</button>`;
+        pop.querySelector('button').onclick = () => openAct(a.id);
+        m.bindPopup(pop);
+        m.on('mouseover', () => hot(a.id, true)); m.on('mouseout', () => hot(a.id, false));
+        m.on('click', () => document.querySelector(`[data-card="${a.id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
+        markers[a.id] = m;
+      });
+      const pts = list.map(a => [a.lat, a.lng]);
+      setTimeout(() => {
+        map.invalidateSize();
+        if (pts.length === 1) map.setView(pts[0], 14);
+        else if (pts.length) map.fitBounds(pts, { padding: [36, 36], maxZoom: 15 });
+      }, 0);
+    }
+    function hot(id, on) {
+      document.querySelector(`.pin[data-pin="${id}"]`)?.classList.toggle('hot', on);
+      document.querySelector(`[data-card="${id}"]`)?.classList.toggle('hot', on);
+      markers[id]?.setZIndexOffset(on ? 1000 : 0);
     }
     function toggleFav(id) { fav.has(id) ? fav.delete(id) : fav.add(id); store.set('act-fav', [...fav]); renderDays(); renderGrid(); const h = document.querySelector('#modal [data-mfav]'); if (h) h.textContent = fav.has(id) ? '♥ Shortlisted' : '♡ Shortlist'; }
     function update(scrollTop) {
