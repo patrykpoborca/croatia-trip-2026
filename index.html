@@ -545,17 +545,24 @@
     const NOTE = { DBV: '30 min away', SPU: '~3 h drive', ZAG: 'fly/drive the day before' };
     const sameDay = f => f.a <= '10:45';
     const PICKS = new Set(['DBV-FRA-07:30', 'DBV-VIE-08:40', 'DBV-MUC-17:05', 'DBV-FRA-18:55']);
-    const state = { o: 'DBV', same: false };
+    const state = { o: 'DBV', same: false, sort: 'time' };
     const gf = f => `https://www.google.com/travel/flights?q=${encodeURIComponent(`Flights from ${f.o} to ${f.h} on 2026-10-19 one way nonstop`)}&curr=USD&hl=en`;
     const heads = [...document.querySelectorAll('#fl-table thead th')].map(th => th.textContent.trim());
+    const ths = document.querySelectorAll('#fl-table thead th');
+    [[2, 'time'], [5, 'price']].forEach(([i, k]) => { ths[i].style.cursor = 'pointer'; ths[i].title = 'Sort'; ths[i].onclick = () => { state.sort = k; render(); }; });
     function render() {
       const opts = [['ALL', 'All airports'], ['DBV', 'Dubrovnik · 30 min'], ['SPU', 'Split · ~3 h drive'], ['ZAG', 'Zagreb · day before']];
       document.getElementById('fl-filters').innerHTML = opts.map(([k, l]) => `<button data-o="${k}" class="${state.o === k ? '' : 'off'}">${l}</button>`).join('')
-        + `<button data-same="1" class="${state.same ? '' : 'off'}">☀️ Same-day only</button>`;
+        + `<button data-same="1" class="${state.same ? '' : 'off'}">☀️ Same-day only</button>`
+        + `<span class="tiny" style="align-self:center;margin-left:8px">Sort:</span>`
+        + [['time', '🕗 Departure'], ['price', '💲 Price (low → high)'], ['arr', '🛬 Arrival']].map(([k, l]) => `<button data-sort="${k}" class="${state.sort === k ? '' : 'off'}">${l}</button>`).join('');
       document.querySelectorAll('#fl-filters [data-o]').forEach(b => b.onclick = () => { state.o = b.dataset.o; render(); });
       document.querySelector('#fl-filters [data-same]').onclick = () => { state.same = !state.same; render(); };
+      document.querySelectorAll('#fl-filters [data-sort]').forEach(b => b.onclick = () => { state.sort = b.dataset.sort; render(); });
       const rows = FL.filter(f => (state.o === 'ALL' || f.o === state.o) && (!state.same || sameDay(f)))
-        .sort((x, y) => x.d.localeCompare(y.d) || x.p - y.p);
+        .sort(state.sort === 'price' ? (x, y) => x.p - y.p || x.d.localeCompare(y.d)
+            : state.sort === 'arr' ? (x, y) => x.a.localeCompare(y.a) || x.p - y.p
+            : (x, y) => x.d.localeCompare(y.d) || x.p - y.p);
       const minP = Math.min(...rows.map(r => r.p));
       document.querySelector('#fl-table tbody').innerHTML = rows.map(f => {
         const pick = PICKS.has(`${f.o}-${f.h}-${f.d}`);
