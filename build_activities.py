@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import quote_plus
 
 import activities_data as AD
-from activities_reviews import REVIEWS, OPERATOR, SKIP_RATING
+from activities_reviews import REVIEWS, OPERATOR, SKIP_RATING, WEB_REVIEWED
 
 HERE = Path(__file__).parent
 IMG = json.loads((HERE / "data/activity_images.json").read_text())
@@ -28,6 +28,7 @@ for a in AD.A:
         topics=[t.split(":")[0] for t in g.get("tp", [])] if rated else [],
         operator=OPERATOR.get(a["id"], ""),
         praise=praise, watch=watch,
+        rsrc="web" if a["id"] in WEB_REVIEWED or a["title"].startswith(("Cooking class", "Food tour")) else "gmaps",
         maps=f"https://www.google.com/maps/search/?api=1&query={quote_plus(a['maps_q'])}",
         directions=f"https://www.google.com/maps/dir/?api=1&destination={a['lat']},{a['lng']}",
     ))

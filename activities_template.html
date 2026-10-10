@@ -224,7 +224,7 @@
             <a class="btn ghost" href="${esc(a.directions)}" target="_blank" rel="noopener">Directions ↗</a>
             ${a.link ? `<a class="btn ghost" href="${esc(a.link)}" target="_blank" rel="noopener">${/^(Cooking class|Food tour)/.test(a.title) ? 'Book / details ↗' : 'Official info ↗'}</a>` : ''}
           </div>
-          <p class="fine">${!/^(Cooking class|Food tour)/.test(a.title) ? 'Review themes are paraphrased from Google Maps reviews (Sept 2026).' : 'Review themes are paraphrased from booking-site reviews and blog write-ups (Oct 2026).'} Prices approximate.</p>
+          <p class="fine">${a.rsrc === 'gmaps' ? 'Review themes are paraphrased from Google Maps reviews (Sept 2026).' : 'Review themes are paraphrased from booking-site reviews and travel write-ups (Oct 2026).'} Prices approximate.</p>
         </div>`;
       const m = $('modal');
       m.querySelector('.close').onclick = () => $('dlg').close();

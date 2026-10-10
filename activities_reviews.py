@@ -79,3 +79,16 @@ REVIEWS.update({
     "mostarfoodtour": ("Covers the classics — burek, ćevapi, coffee and sweets — on a tip-based budget.", "Tip-based tours vary; quality depends on the guide on the day."),
 })
 SKIP_RATING |= {"splitcook", "splitfoodtour", "plitvicecook", "omissoparnik", "hvarfarmcook", "hvargrablje", "dubkonavle", "dubfoodtour", "mostarcook", "mostarfoodtour"}
+
+# Zagreb start (added Oct 9) — Chrome scraping was unavailable, so these are general themes from travel write-ups, not Google Maps
+REVIEWS.update({
+    "zagupper": ("Visitors find the Upper Town charming, compact and atmospheric, especially at dusk when the gas lamps are lit.", "Cobbles and some steep lanes; St. Mark's is usually viewed from outside only."),
+    "zagbroken": ("Consistently called one of the most original museums in Europe — funny and moving in equal measure.", "Small, and it can get crowded on rainy afternoons."),
+    "zagcathedral": ("The spires are the city's landmark and look great from the square below.", "Ongoing earthquake restoration — scaffolding and limited interior access."),
+    "zagtkalciceva": ("Lively, easy café and bar street with lots of terraces.", "Touristy prices; noisy late on weekends."),
+    "zaglastruk": ("Locals and visitors both recommend it as the place to try štrukli properly.", "Small and popular — expect a short wait at dinner time."),
+    "zagdolac": ("Colourful and authentic, with friendly vendors and good cheese and produce.", "Winds down by late morning on Sundays."),
+    "zagstrukli": ("Rated 10/10 on booking sites; guests like the market walk and the generous tasting while the štrukli bakes.", "Takes the whole Sunday morning before a full driving day."),
+})
+SKIP_RATING |= {"zagupper", "zagbroken", "zagcathedral", "zagtkalciceva", "zaglastruk", "zagdolac", "zagstrukli"}
+WEB_REVIEWED = {"zagupper", "zagbroken", "zagcathedral", "zagtkalciceva", "zaglastruk", "zagdolac", "zagstrukli"}
