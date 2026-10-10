@@ -33,7 +33,14 @@ for a in AD.A:
         directions=f"https://www.google.com/maps/dir/?api=1&destination={a['lat']},{a['lng']}",
     ))
 
-data = dict(days=[dict(id=d, date=dt, place=p, theme=t, gap=getattr(AD, "FOOD_GAPS", {}).get(d, "")) for d, dt, p, t in AD.DAYS], acts=acts)
+INFO = getattr(AD, "DAY_INFO", {})
+def day(d, dt, p, t):
+    i = INFO.get(d, {})
+    return dict(id=d, date=dt, place=p, theme=t, gap=getattr(AD, "FOOD_GAPS", {}).get(d, ""),
+                iso=i.get("date", ""), summary=i.get("summary", ""), stops=[dict(label=l, id=x) for l, x in i.get("stops", [])],
+                travel=i.get("travel", []), total=i.get("total", ""),
+                wx=dict(name=i["wx"][0], lat=i["wx"][1], lng=i["wx"][2]) if i.get("wx") else None)
+data = dict(days=[day(*x) for x in AD.DAYS], acts=acts)
 tpl = (HERE / "activities_template.html").read_text()
 (HERE / "activities.html").write_text(tpl.replace("/*__DATA__*/", "window.ACT = " + json.dumps(data, ensure_ascii=False) + ";"))
 print(f"activities.html: {len(acts)} activities, {sum(len(x['images']) for x in acts)} images, {sum(1 for x in acts if x['rating'])} rated")

@@ -13,21 +13,21 @@
 <Placemark><name>Lotrščak Tower &amp; funicular</name><description>[culture] Shortest funicular in the world; Strossmayer promenade views. [added]</description><styleUrl>#s0</styleUrl><Point><coordinates>15.9728,45.8143,0</coordinates></Point></Placemark>
 <Placemark><name>La Štruk</name><description>[food] Štrukli (baked cheese pastry) specialists. [added]</description><styleUrl>#s0</styleUrl><Point><coordinates>15.9748,45.814,0</coordinates></Point></Placemark>
 </Folder>
-<Style id="s1"><IconStyle><color>ff7fb89b</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
-<Folder><name>Oct 11 · Rastoke, Barać → Plitvice</name>
+<Style id="s1"><IconStyle><color>ff6ba987</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 11 · Rastoke → Plitvice (park from ~11:00)</name>
 <Placemark><name>Rastoke (Slunj)</name><description>[culture] Water-mill village on the way down, ~1 h 20 from Zagreb. Fine in the rain.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.5808,45.1224,0</coordinates></Point></Placemark>
 <Placemark><name>Barać Caves</name><description>[alt] Underground = rain-proof. Tours leave as groups form (10–45 min wait); 9 °C inside — bring a layer.</description><styleUrl>#s1</styleUrl><Point><coordinates>15.5669,45.0119,0</coordinates></Point></Placemark>
 <Placemark><name>Restaurant Lička Kuća</name><description>[food] Lamb &amp; Lika potatoes by Entrance 1. [added]</description><styleUrl>#s1</styleUrl><Point><coordinates>15.608,44.902,0</coordinates></Point></Placemark>
 </Folder>
-<Style id="s2"><IconStyle><color>ff6ba987</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
-<Folder><name>Oct 12 · Plitvice → Krka → Split</name>
-<Placemark><name>Plitvice – Entrance 1</name><description>[nature] Program C starts here; arrive for the 8:00 slot. Done ~13:30.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.6097,44.9019,0</coordinates></Point></Placemark>
+<Style id="s2"><IconStyle><color>ff7fb89b</color><scale>1.1</scale><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>Oct 11 · Plitvice park · Oct 12 · Krka → Split</name>
+<Placemark><name>Plitvice – Entrance 1</name><description>[nature] Program C starts here; timed entry ~11:00 on Oct 11, done ~16:00.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.6097,44.9019,0</coordinates></Point></Placemark>
 <Placemark><name>Plitvice – Entrance 2</name><description>[nature] Start of Program H.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.6222,44.8813,0</coordinates></Point></Placemark>
 <Placemark><name>Veliki Slap (Great Waterfall)</name><description>[nature] 78 m — tallest in Croatia.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.61,44.9031,0</coordinates></Point></Placemark>
 <Placemark><name>Kozjak Lake boat (P1–P2)</name><description>[nature] Electric boat crossing, included in ticket.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.618,44.88,0</coordinates></Point></Placemark>
 <Placemark><name>Galovac &amp; Upper Lakes</name><description>[nature] Best cascades; autumn colour peak mid-Oct.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.601,44.87,0</coordinates></Point></Placemark>
 <Placemark><name>Viewpoint over Lower Lakes (Kozjačka)</name><description>[nature] Classic postcard shot near Entrance 1.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.609,44.9005,0</coordinates></Point></Placemark>
-<Placemark><name>Krka NP – Skradinski Buk</name><description>[nature] Plitvice → Krka ~2 h. Skradinski Buk open 8–18 until Oct 15 (last entry earlier); boardwalk loop ~1.5 h. Then ~1 h to Split.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.963,43.805,0</coordinates></Point></Placemark>
+<Placemark><name>Krka NP – Skradinski Buk</name><description>[nature] Oct 12: leave Plitvice ~8:30, here ~10:45. Open 8–18 until Oct 15; boardwalk loop ~1.5 h, lunch in Skradin, then ~1 h to Split.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.963,43.805,0</coordinates></Point></Placemark>
 <Placemark><name>Šibenik – St. James Cathedral</name><description>[alt] UNESCO cathedral; only if you skip Krka.</description><styleUrl>#s2</styleUrl><Point><coordinates>15.8889,43.7367,0</coordinates></Point></Placemark>
 <Placemark><name>Trogir Old Town</name><description>[alt] UNESCO island town; now an alternate (no slot in the Zagreb-start plan).</description><styleUrl>#s2</styleUrl><Point><coordinates>16.251,43.517,0</coordinates></Point></Placemark>
 <Placemark><name>Kamerlengo Fortress</name><description>[alt] Trogir&#x27;s fortress walk-up.</description><styleUrl>#s2</styleUrl><Point><coordinates>16.248,43.516,0</coordinates></Point></Placemark>

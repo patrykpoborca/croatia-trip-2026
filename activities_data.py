@@ -8,8 +8,8 @@ fields: id, day, title, cat, lat, lng, img_q (Commons search), maps_q (Google Ma
 
 DAYS = [
     ("oct10", "Sat Oct 10", "Zagreb", "Land at 14:00, pick up the car, Upper Town evening"),
-    ("oct11", "Sun Oct 11", "Rastoke → Plitvice", "Rainy-day drive: mills and caves"),
-    ("oct12", "Mon Oct 12", "Plitvice → Krka → Split", "Both waterfall parks on the dry day"),
+    ("oct11", "Sun Oct 11", "Rastoke → Plitvice", "Mills in the morning, the lakes all afternoon"),
+    ("oct12", "Mon Oct 12", "Krka → Split", "Krka by late morning, Split by mid-afternoon"),
     ("oct13", "Tue Oct 13", "Omiš, Klis & Split", "Adventure, then a fortress sunset"),
     ("oct14", "Wed Oct 14", "Split → Hvar Town", "Palace morning, island afternoon"),
     ("oct15", "Thu Oct 15", "Hvar Island", "Villages, vineyards, old Greek fields"),
@@ -24,7 +24,7 @@ A = [
     dict(id="palace", day="oct14", title="Diocletian's Palace & Peristyle", cat="culture", lat=43.5081, lng=16.4402,
          img_q="Peristyle Diocletian's Palace Split", maps_q="Peristyle, Split",
          summary="A 1,700-year-old Roman emperor's retirement palace that is still a living neighbourhood — 3,000 people live inside its walls. The Peristyle courtyard is the heart; the Vestibule's open dome has great acoustics (klapa singers often perform).",
-         duration="1.5–3 h wandering", cost="Free to walk; combo tickets for cathedral/tower/crypt ~€15", when="Oct 12–13 at night, Oct 14 morning in daylight",
+         duration="1.5–3 h wandering", cost="Free to walk; combo tickets for cathedral/tower/crypt ~€15", when="Oct 12 afternoon in daylight, at night, and Oct 14 morning",
          tips=["Go once in daylight and once at night.", "Guided walking tours (~1.5 h) explain the layers of history far better than signs."],
          link="https://visitsplit.com/en/447/diocletians-palace"),
     dict(id="belltower", day="oct14", title="Cathedral of St. Domnius & Bell Tower", cat="culture", lat=43.5078, lng=16.4405,
@@ -47,7 +47,7 @@ A = [
     dict(id="riva", day="oct12", title="Riva evening promenade", cat="relax", lat=43.5075, lng=16.4385,
          img_q="Riva promenade Split", maps_q="Riva Split",
          summary="Split's palm-lined waterfront, the city's living room. Coffee culture by day, evening passeggiata by night with the palace's southern façade behind you.",
-         duration="As long as you like", cost="Free (coffee €2–4)", when="Oct 12 evening after the drive, and Oct 13 night",
+         duration="As long as you like", cost="Free (coffee €2–4)", when="Oct 12 evening and Oct 13 night",
          tips=["Cafés on the Riva are pricier — step one lane back for better food."], link=""),
     dict(id="pazar", day="oct14", title="Green Market (Pazar)", cat="food", lat=43.5087, lng=16.4415,
          img_q="Green market Pazar Split", maps_q="Green Market Split",
@@ -57,7 +57,7 @@ A = [
     dict(id="marjan", day="oct14", title="Marjan Hill: Vidilica → Telegrin", cat="nature", lat=43.5087, lng=16.4133,
          img_q="Marjan hill Split view", maps_q="Telegrin Marjan Split",
          summary="Pine-forest park on the peninsula right next to the Old Town. Stairs from Varoš reach the Vidilica café viewpoint in 15 min; keep climbing to Telegrin (178 m) for a 360° view of Split and the islands.",
-         duration="45 min (Vidilica) to 2–3 h (full loop)", cost="Free", when="Oct 14 sunrise (Vidilica is 15 min up from Varoš)",
+         duration="45 min (Vidilica) to 2–3 h (full loop)", cost="Free", when="Oct 12 sunset (~18:25) at Vidilica",
          tips=["Vidilica is a great sunset drink spot.", "The coastal road loop passes old hermitages carved into the cliffs."],
          link="https://www.marjan-parksuma.hr/en/"),
     dict(id="salona", day="oct14", title="Salona Archaeological Park", cat="alt", lat=43.5390, lng=16.4830,
@@ -72,13 +72,13 @@ A = [
          tips=["Kasjuni beach under Marjan is the quieter alternative."], link=""),
 
     # ---------------- Oct 11 Plitvice
-    dict(id="plitvice", day="oct12", title="Plitvice Lakes – Program H / C", cat="nature", lat=44.8800, lng=15.6180,
+    dict(id="plitvice", day="oct11", title="Plitvice Lakes – Program H / C", cat="nature", lat=44.8800, lng=15.6180,
          img_q="Plitvice Lakes National Park waterfalls autumn", maps_q="Plitvice Lakes National Park",
          summary="Croatia's UNESCO signature: 16 terraced lakes linked by waterfalls and wooden boardwalks. Program H (from Entrance 2) and C (from Entrance 1) both cover Upper and Lower Lakes with the Kozjak electric-boat crossing and the 78 m Veliki Slap.",
-         duration="4–6 h (8–9 km)", cost="October ticket ~€23.50 pp (timed entry — book online)", when="Oct 12, 8:00 timed entry (the dry day); done by ~13:30",
+         duration="4–6 h (8–9 km)", cost="October ticket ~€23.50 pp (timed entry — book online)", when="Oct 11 from ~11:00 (timed ticket) — Program C, done ~16:00",
          tips=["Upper Lakes first, before tour groups arrive.", "Boardwalks get slippery in rain — shoes with grip.", "Program K (full circuit, ~18 km) only if the weather is perfect."],
          link="https://np-plitvicka-jezera.hr/en/plan-your-visit/istrazite-jezera/activities/lake-tour-programmes/"),
-    dict(id="velikislap", day="oct12", title="Veliki Slap & Lower Lakes viewpoint", cat="nature", lat=44.9031, lng=15.6100,
+    dict(id="velikislap", day="oct11", title="Veliki Slap & Lower Lakes viewpoint", cat="nature", lat=44.9031, lng=15.6100,
          img_q="Veliki slap Plitvice", maps_q="Veliki Slap Plitvice",
          summary="The park's tallest waterfall (78 m) and the classic postcard view looking down over the Lower Lakes and boardwalks from the canyon rim near Entrance 1.",
          duration="Included in the walk (~45 min detour)", cost="Included", when="Morning light is best for the viewpoint",
@@ -86,12 +86,12 @@ A = [
     dict(id="rastoke", day="oct11", title="Rastoke water-mill village", cat="culture", lat=45.1224, lng=15.5808,
          img_q="Rastoke Slunj", maps_q="Rastoke Slunj",
          summary="A fairytale hamlet of old water mills and houses built over the cascades where the Slunjčica meets the Korana — a 'mini Plitvice' you can walk through in an hour.",
-         duration="1 h", cost="~€5 for the mills area", when="Oct 11 midday, on the drive from Zagreb",
+         duration="1 h", cost="~€5 for the mills area", when="Oct 11 ~8:50–9:50, on the way from Zagreb",
          tips=['~1 h 20 from Zagreb, right on the route.', 'Fine in the rain — the cascades are louder.'], link=""),
-    dict(id="barac", day="oct11", title="Barać Caves", cat="nature", lat=45.0119, lng=15.5669,
+    dict(id="barac", day="oct11", title="Barać Caves", cat="alt", lat=45.0119, lng=15.5669,
          img_q="Barać caves", maps_q="Barać Caves",
          summary="Guided tours through a limestone cave system with stalactites and bat colonies — the best rain fallback near Plitvice.",
-         duration="1 h tour", cost="~€12", when="Oct 11 afternoon — the rain-day anchor",
+         duration="1 h tour", cost="~€12", when="Only if it’s pouring on Oct 11 — the forecast now has the rain overnight",
          tips=['Open daily through October; tours leave as groups form (10–45 min wait).', 'Constant ~9 °C inside — bring a layer.'], link="https://baracevespilje.hr/en/"),
     dict(id="lickakuca", day="oct11", title="Dinner: Lička Kuća", cat="food", lat=44.9020, lng=15.6080,
          img_q="Lika cuisine lamb peka", maps_q="Restaurant Lička kuća Plitvice",
@@ -112,7 +112,7 @@ A = [
     dict(id="krka", day="oct12", title="Krka NP – Skradinski Buk", cat="nature", lat=43.8050, lng=15.9630,
          img_q="Skradinski buk Krka", maps_q="Skradinski Buk",
          summary="Seventeen travertine cascades tumbling into a wide pool, with boardwalks and restored water mills. Different character from Plitvice — broader, more river-like.",
-         duration="2–3 h", cost="October ticket ~€20 pp", when="Oct 12 ~15:30 after Plitvice (Skradinski Buk open until 18:00 through Oct 15)",
+         duration="2–3 h", cost="October ticket ~€20 pp", when="Oct 12 ~10:45, on the drive to Split (open 8–18 until Oct 15)",
          tips=['Enter at Lozovac (drive straight to the falls by shuttle); boardwalk loop ~1.5 h.', 'Swimming is no longer permitted.'], link="https://www.npkrka.hr/en/"),
     dict(id="sibenik", day="oct12", title="Šibenik – St. James Cathedral", cat="alt", lat=43.7367, lng=15.8889,
          img_q="Cathedral of St. James Šibenik", maps_q="Cathedral of St. James Šibenik",
@@ -339,12 +339,12 @@ A = [
     dict(id="zagdolac", day="oct11", title="Dolac Market", cat="food", lat=45.8143, lng=15.9775,
          img_q="Dolac market Zagreb", maps_q="Dolac Market Zagreb",
          summary="The red-umbrella farmers' market above Ban Jelačić Square, with a covered hall for cheese, cured meats and fish below.",
-         duration="45 min", cost="Free", when="Oct 11 morning before driving (Sat closes ~15:00, so you'll miss it on landing day)",
+         duration="45 min", cost="Free", when="Sun 7–13 — only if you skip Rastoke (the 7:30 start leaves no time)",
          tips=["Go before 11:00 on Sunday — stalls pack up early.", "Pick up cheese and fruit for the drive."], link="https://www.visitzagreb.hr/zagreb/dolac-market/"),
     dict(id="zagstrukli", day="oct11", title="Cooking class: štrukli + Dolac market", cat="food", lat=45.8110, lng=15.9800,
          img_q="Štrukli cheese", maps_q="Kuhaona Zagreb",
          summary="Walk Dolac market with a local, then make štrukli from scratch at the Kuhaona cooking studio; while it bakes you taste cured meats, cheese, pumpkin-seed oil and local wine.",
-         duration="~3 h", cost="~$95 pp (or ~€50 for Kuhaona's own shorter workshop)", when="Oct 11 morning — then leave for Rastoke around noon",
+         duration="~3 h", cost="~$95 pp (or ~€50 for Kuhaona's own shorter workshop)", when="Doesn’t fit the Plitvice-at-11:00 plan — only if you skip Rastoke and enter the park later",
          tips=["Only if you're happy to reach Barać mid-afternoon.", "Vegetarian-friendly (dairy and eggs)."],
          link="https://www.byfood.com/experiences/strukli-cooking-class-with-dolac-market-tour-26624"),
 ] + A
@@ -366,7 +366,7 @@ A += [
     dict(id="plitvicecook", day="oct11", title="Cooking class: Lika home kitchen (Rastovača)", cat="food", lat=44.8985, lng=15.6125,
          img_q="Rastovača Plitvice", maps_q="Rastovača 14 Plitvice",
          summary="A family cooking class in a countryside house in Rastovača, a few minutes from Entrance 1: polenta with cream cheese, veal and lamb under the peka with potatoes and home-made bread, and uštipci (doughnuts) with jam — with home-made rakija.",
-         duration="~4 h", cost="~$92 pp", when="Oct 11 evening, after Rastoke & Barać",
+         duration="~4 h", cost="~$92 pp", when="Oct 11 evening, after the park",
          tips=["Only works if you start the park at 8:00 and are done by ~14:00.", "It replaces dinner — skip Lička kuća that night if you do this."],
          link="https://www.byfood.com/experiences/shared-rastovaca-cooking-class-40473"),
     dict(id="omissoparnik", day="oct13", title="Cooking class: soparnik in the Poljica villages", cat="food", lat=43.4560, lng=16.7380,
@@ -416,4 +416,88 @@ A += [
 # Stops where no second food tour / class turned up in research
 FOOD_GAPS = {
     "oct13": "Omiš: only the soparnik class found. Alternative: peka-bread demo and lunch at Radmanove Mlinice (already in the plan).",
+}
+
+# ---------------- Day overviews (summary, stops, travel stats, forecast location) — used by the explorer's day panel
+# stops: (label, activity id or None). wx: (place name, lat, lng) for the live Open-Meteo forecast.
+DAY_INFO = {
+    "oct10": dict(date="2026-10-10", wx=("Zagreb", 45.81, 15.98),
+        summary="You land in Zagreb at 14:00 after the overnight flight and a morning in Frankfurt, so today is deliberately gentle. "
+                "Get into the centre, check in, and walk the compact Upper Town loop in the late afternoon. "
+                "Have štrukli for dinner and a drink on Tkalčićeva, then sleep early, because tomorrow starts at 7:30.",
+        stops=[("Upper Town loop", "zagupper"), ("Museum of Broken Relationships (open till 21:00)", "zagbroken"),
+               ("Zagreb Cathedral", "zagcathedral"), ("Štrukli at La Štruk", "zaglastruk"), ("Tkalčićeva drinks", "zagtkalciceva")],
+        travel=["✈️ LH 1404 Frankfurt 12:30 → Zagreb 14:00 (1 h 30)", "🚗/🚌 Airport → centre · 25–40 min", "🚶 Upper Town loop ~2 km · ~2 h"],
+        total="~2 h of travel after landing; everything else on foot"),
+    "oct11": dict(date="2026-10-11", wx=("Plitvice Lakes", 44.88, 15.62),
+        summary="Leave Zagreb around 7:30 and stop at Rastoke on the way: an hour among the water mills, with coffee over the cascades and bread for lunch. "
+                "Enter Plitvice around 11:00 on a timed ticket and walk Program C: the Upper Lakes first while they're quieter, the Kozjak boat, then the Lower Lakes and Veliki Slap. "
+                "You'll be done around 16:00 with the waterfalls running full after the night's rain. Finish with Lika lamb for dinner and sleep by the park.",
+        stops=[("Rastoke mills & Vodena Ovca café", "rastoke"), ("Plitvice Program C", "plitvice"), ("Veliki Slap (78 m)", "velikislap"),
+               ("Lička kuća dinner", "lickakuca"), ("Lika home cooking class", "plitvicecook"), ("Barać Caves (only if it's pouring)", "barac")],
+        travel=["🚗 Zagreb → Rastoke · 1 h 20 (105 km)", "🚗 Rastoke → Plitvice · 30 min", "🥾 Program C · ~8 km, 4–6 h incl. boat"],
+        total="~1 h 50 driving · 4–6 h walking"),
+    "oct12": dict(date="2026-10-12", wx=("Krka / Šibenik area", 43.80, 15.96),
+        summary="Leave Plitvice around 8:30 and be at Krka's Skradinski Buk by late morning. It's a broader, river-like set of travertine falls with a boardwalk loop of about 1.5 h, open 8–18 until Oct 15. "
+                "Have lunch in Skradin, then drive an hour to Split and arrive mid-afternoon, which gives you the palace and bell tower in daylight. "
+                "Finish with sunset from Marjan's Vidilica viewpoint and an evening on the Riva.",
+        stops=[("Krka – Skradinski Buk", "krka"), ("Diocletian's Palace & Peristyle", "palace"), ("Bell tower climb", "belltower"),
+               ("Marjan – Vidilica at sunset", "marjan"), ("Riva evening", "riva")],
+        travel=["🚗 Plitvice → Krka · ~2 h (190 km, motorway tolls)", "🚗 Krka → Split · ~1 h (90 km)", "🥾 Krka boardwalk loop · ~1.5 h"],
+        total="~3 h driving"),
+    "oct13": dict(date="2026-10-13", wx=("Omiš", 43.44, 16.69),
+        summary="The adventure day. Rafting the Cetina canyon (3–4 h, with cliff jumps and a cave swim) or ziplining 100 m above it, with operators meeting in Omiš or picking up in Split. "
+                "Have a riverside lunch at Radmanove Mlinice, then climb Mirabela for the view over the river mouth. "
+                "On the way back, catch Klis Fortress at sunset, then spend the evening in Split, ideally on the Old Town food tour.",
+        stops=[("Cetina rafting", "rafting"), ("Zipline over the canyon", "zipline"), ("Radmanove Mlinice lunch", "radmanove"),
+               ("Mirabela fortress", "mirabela"), ("Klis Fortress at sunset", "klis"), ("Split food tour", "splitfoodtour")],
+        travel=["🚗 Split → Omiš · 40 min (25 km)", "🚗 Omiš → Klis · ~40 min", "🚗 Klis → Split · 20 min", "🚣 Rafting · 3–4 h door to door"],
+        total="~1 h 40 driving (or operator pickup + taxi to Klis)"),
+    "oct14": dict(date="2026-10-14", wx=("Hvar Town", 43.17, 16.44),
+        summary="Spend the morning on Split's palace: the Peristyle, bell tower, cellars and the Pazar market. "
+                "Take the 13:00 Krilo catamaran (55 min) into the heart of Hvar Town. "
+                "Check in, wander St. Stephen's Square and the harbour, and climb to the Fortica for sunset over the Pakleni Islands.",
+        stops=[("Palace cellars", "cellars"), ("Pazar market", "pazar"), ("Hvar Town & St. Stephen's", "hvartown"),
+               ("Fortica at sunset", "forticahvar"), ("Hula Hula sundowner", "hulahula")],
+        travel=["⛴️ Split → Hvar Town · 13:00 → 13:55 (Krilo, ~$58 for 2)", "🚶 Ferry port is 5 min from Split's Old Town", "🚶 Hvar Town → Fortica · 20 min climb"],
+        total="~1 h by boat · rest on foot"),
+    "oct15": dict(date="2026-10-15", wx=("Hvar Island (Stari Grad)", 43.18, 16.60),
+        summary="An island loop by rented scooter or small car, or by bus and e-bike if you'd rather not drive. "
+                "Swim or look in at Dubovica cove, then cross to Stari Grad, Croatia's oldest town, and ride or drive through the 2,400-year-old Greek field grid of the Stari Grad Plain. "
+                "Continue to pretty Vrboska and end with dinner in the near-abandoned Grablje villages above Hvar Town.",
+        stops=[("Dubovica cove", "dubovica"), ("Stari Grad & Tvrdalj", "starigrad"), ("Stari Grad Plain", "plain"),
+               ("Vrboska", "vrboska"), ("Malo Grablje dinner (Stori Komin)", "grablje")],
+        travel=["🛵 Hvar Town → Dubovica · 15 min", "🛵 Dubovica → Stari Grad · 25 min", "🛵 Stari Grad → Vrboska · 15 min", "🛵 Vrboska → Hvar Town · ~35 min"],
+        total="~1 h 30 riding/driving"),
+    "oct16": dict(date="2026-10-16", wx=("Dubrovnik", 42.64, 18.11),
+        summary="Take the 09:10 Krilo catamaran, a scenic 3 h 20 along the coast via Korčula, arriving in Dubrovnik at 12:30. "
+                "Taxi to the Old Town, drop your bags and get your bearings on the Stradun. "
+                "Late afternoon, ride the cable car (or hike) up Mount Srđ for the classic sunset view, then have a drink at Buža or dinner on the Old Town food tour.",
+        stops=[("Old Town & Stradun", "oldtown"), ("Mount Srđ at sunset", "srd"), ("Buža cliff bar", "buza"), ("Old Town food tour", "dubfoodtour")],
+        travel=["⛴️ Hvar → Dubrovnik · 09:10 → 12:30 (Krilo, $115 for 2)", "🚕 Gruž port → Pile Gate · 15 min", "🚡 Cable car up Srđ · 4 min (or ~1 h hike)"],
+        total="~3 h 35 by boat + taxi"),
+    "oct17": dict(date="2026-10-17", wx=("Dubrovnik", 42.64, 18.11),
+        summary="A car-free day. Walk the city walls at 8:00 before the heat and the crowds (about 2 km, 1.5–2 h), with Fort Lovrijenac on the same ticket. "
+                "Then take the 15-minute boat to Lokrum for its peacocks, botanical garden and swimming rocks, or sea-kayak around the walls instead. "
+                "Last boats back are mid-afternoon in October. Fill the evening with the Rector's Palace, the Old Port and a final Old Town dinner.",
+        stops=[("City walls at 8:00", "walls"), ("Fort Lovrijenac", "lovrijenac"), ("Lokrum island", "lokrum"),
+               ("Sea kayak", "kayak"), ("Rector's Palace", "rector"), ("Banje beach", "banje")],
+        travel=["🚶 Everything on foot", "⛴️ Old Port → Lokrum · 15 min (last return ~16:00 in Oct)", "🛶 Kayak tour · ~3 h"],
+        total="No driving"),
+    "oct18": dict(date="2026-10-18", wx=("Mostar", 43.34, 17.81),
+        summary="A long day trip into Bosnia & Herzegovina; bring passports for two border crossings. "
+                "Start with Kravica's amphitheatre of waterfalls, then the Ottoman hillside village of Počitelj. "
+                "Spend the afternoon in Mostar: Stari Most and the bridge divers, the bazaar and the minaret view at Koski Mehmed Pasha. "
+                "Add Blagaj's riverside dervish house if time allows.",
+        stops=[("Kravica waterfalls", "kravica"), ("Počitelj", "pocitelj"), ("Mostar & Stari Most", "mostar"),
+               ("Koski Mehmed Pasha minaret", "koski"), ("Blagaj Tekke (optional)", "blagaj"), ("Ćevapi & burek walk", "mostarfoodtour")],
+        travel=["🚗 Dubrovnik → Kravica · ~2 h 15 incl. border", "🚗 Kravica → Počitelj → Mostar · ~50 min", "🚗 Mostar → Dubrovnik · ~2 h 40"],
+        total="~6 h driving round trip (or a tour/driver)"),
+    "oct19": dict(date="2026-10-19", wx=("Dubrovnik", 42.64, 18.11),
+        summary="Departure day. Fly to a United hub for standby home; Dubrovnik → Frankfurt at 07:30 is the best same-day setup. "
+                "With an early flight, pre-book a taxi and schedule nothing. "
+                "If you fly in the evening instead, spend the day in Cavtat, a palm-lined harbour town 10 minutes from the airport.",
+        stops=[("Flights home (deck)", None), ("Cavtat & Račić Mausoleum", "cavtat")],
+        travel=["🚕 Old Town → Dubrovnik Airport · ~30 min", "✈️ DBV → FRA 07:30 → 09:30 (2 h) — see Flights Home in the deck"],
+        total="~30 min to the airport"),
 }
