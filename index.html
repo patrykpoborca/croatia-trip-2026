@@ -235,7 +235,7 @@
   <nav class="deck-nav">
     <a href="#cover">Cover</a><a href="#route">Route</a><a href="#mix">Trip Mix</a><a href="activities.html" style="color:var(--ink);border-color:rgba(212,106,76,.6)">✨ Activity explorer</a><a href="#summary">Itinerary</a><a href="#map">Map</a><a href="#travel">Travel Times</a><a href="#stays">Stays</a><a href="#logistics">Logistics</a><a href="#food">Food Classes</a>
     <a href="#split">Zagreb</a><a href="#plitvice">Rastoke → Plitvice</a><a href="#return">Plitvice → Krka</a><a href="#omis">Omiš + Klis</a>
-    <a href="#hvar1">Split → Hvar</a><a href="#hvar2">Hvar Island</a><a href="#dub1">Dubrovnik Arrival</a><a href="#dub2">Dubrovnik Full Day</a><a href="#bosnia">Bosnia</a><a href="#depart">Departure</a><a href="#sources">Sources</a>
+    <a href="#hvar1">Split → Hvar</a><a href="#hvar2">Hvar Island</a><a href="#dub1">Dubrovnik Arrival</a><a href="#dub2">Dubrovnik Full Day</a><a href="#bosnia">Bosnia</a><a href="#depart">Departure</a><a href="#flights">✈️ Flights Home</a><a href="#sources">Sources</a>
   </nav>
 
   <section id="cover" class="slide">
@@ -513,11 +513,65 @@
       <div class="day-title"><div><div class="date">Mon Oct 19 • Fly home</div><h2>Departure day</h2></div><div class="sleep">Goal: no stressful add-ons</div></div>
       <div class="travel"><a href="activities.html#oct19" style="font-size:13px;padding:6px 11px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700">✨ Browse this day's activities →</a><span>🚗 Old Town → DBV airport · 32 min / 22 km</span><span>🚗 Cavtat → airport · 10 min</span></div>
       <div class="grid grid-2">
-        <div class="card"><span class="tag relax">If morning flight</span><h3>Schedule nothing</h3><p class="small">Leave margin for traffic, packing and airport timing. Do not make this another sightseeing day.</p></div>
+        <div class="card"><span class="tag relax">If morning flight</span><h3>Schedule nothing — see <a href="#flights">flights home</a></h3><p class="small">Leave margin for traffic, packing and airport timing. Do not make this another sightseeing day.</p></div>
         <div class="card"><span class="tag culture">If late flight</span><h3>Cavtat</h3><p class="small">Small waterfront town close to Dubrovnik Airport. Good final walk, lunch, Bukovac House or Račić Mausoleum without risking the flight.</p></div>
       </div>
     </div>
   </section>
+
+  <section id="flights" class="slide">
+    <div class="slide-inner">
+      <div class="eyebrow">Mon Oct 19 · Getting home on standby</div>
+      <h2>Flights to United hubs</h2>
+      <p class="small">Every nonstop flight on Oct 19 from Dubrovnik, Split and Zagreb to a European hub United flies from, all under 3 h. Prices are the cheapest one-way economy fare per person on Google Flights (checked Oct 10, USD; usually hand-baggage only). <b>☀️ Same day</b> = lands by ~10:45, early enough to try for a late-morning United departure. <b>🌙 Overnight</b> = sleep at the hub and fly standby on Oct 20. Check United's actual Oct 19 departure times and loads before choosing.</p>
+      <div class="grid grid-3" style="margin:14px 0">
+        <div class="card"><span class="tag nature">Best same-day setup</span><h3>DBV → Frankfurt 07:30</h3><p class="small">Lands 09:30, ~2.5 h before typical United departures, at the gateway you already flew through. Croatia Airlines / Lufthansa, $321.</p></div>
+        <div class="card"><span class="tag culture">Bargain</span><h3>DBV → Vienna 08:40</h3><p class="small">$51 on Ryanair (Lauda), lands 10:05. Only worth it if United's Vienna flight has good standby odds that day. Small personal item only.</p></div>
+        <div class="card"><span class="tag alt">If loads look bad</span><h3>Evening → hub hotel</h3><p class="small">DBV → Munich 17:05 ($247) or → Frankfurt 18:55 ($265), sleep at the hub, then the first United flight on Oct 20. Gives you a last morning in Dubrovnik or Cavtat.</p></div>
+      </div>
+      <div class="map-layers" id="fl-filters"></div>
+      <table id="fl-table">
+        <thead><tr><th>From</th><th>To hub</th><th>Departs → Arrives</th><th>Airline</th><th>Flight</th><th>Price</th><th>Connection</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="tiny" style="margin-top:12px">Getting to the airport from your Dubrovnik hotel: DBV ~30 min · SPU ~3 h drive · ZAG ~6 h drive or a 55-min domestic flight (only makes sense if you reposition on Oct 18, which costs the Mostar day).</p>
+    </div>
+  </section>
+
+  <script>
+  (() => {
+    const FL = [{"o": "DBV", "h": "VIE", "d": "08:40", "a": "10:05", "al": "Ryanair (Lauda)", "t": "1h25", "p": 51}, {"o": "DBV", "h": "FRA", "d": "07:30", "a": "09:30", "al": "Croatia Airlines / Lufthansa", "t": "2h", "p": 321}, {"o": "DBV", "h": "MUC", "d": "11:00", "a": "12:35", "al": "Lufthansa", "t": "1h35", "p": 291}, {"o": "DBV", "h": "VIE", "d": "13:00", "a": "14:20", "al": "Austrian", "t": "1h20", "p": 165}, {"o": "DBV", "h": "AMS", "d": "06:35", "a": "09:05", "al": "KLM", "t": "2h30", "p": 449}, {"o": "DBV", "h": "AMS", "d": "13:25", "a": "15:55", "al": "KLM", "t": "2h30", "p": 470}, {"o": "DBV", "h": "MUC", "d": "17:05", "a": "18:40", "al": "Lufthansa", "t": "1h35", "p": 247}, {"o": "DBV", "h": "FRA", "d": "18:55", "a": "20:55", "al": "Discover", "t": "2h", "p": 265}, {"o": "DBV", "h": "LHR", "d": "20:15", "a": "22:00", "al": "British Airways", "t": "2h45", "p": 181}, {"o": "DBV", "h": "FCO", "d": "21:35", "a": "22:55", "al": "Ryanair", "t": "1h20", "p": 82}, {"o": "SPU", "h": "AMS", "d": "06:30", "a": "08:50", "al": "KLM", "t": "2h20", "p": 188}, {"o": "SPU", "h": "MUC", "d": "08:10", "a": "09:35", "al": "Croatia Airlines / Lufthansa", "t": "1h25", "p": 370}, {"o": "SPU", "h": "AMS", "d": "12:50", "a": "15:10", "al": "KLM", "t": "2h20", "p": 435}, {"o": "SPU", "h": "AMS", "d": "14:35", "a": "16:55", "al": "easyJet", "t": "2h20", "p": 142}, {"o": "SPU", "h": "FRA", "d": "14:45", "a": "16:35", "al": "Croatia Airlines / Lufthansa", "t": "1h50", "p": 333}, {"o": "SPU", "h": "VIE", "d": "15:10", "a": "16:15", "al": "Austrian", "t": "1h05", "p": 324}, {"o": "SPU", "h": "CDG", "d": "15:15", "a": "17:30", "al": "Croatia Airlines", "t": "2h15", "p": 265}, {"o": "SPU", "h": "FCO", "d": "16:10", "a": "17:10", "al": "Croatia Airlines / ITA", "t": "1h", "p": 512}, {"o": "SPU", "h": "LHR", "d": "16:35", "a": "18:10", "al": "British Airways", "t": "2h35", "p": 217}, {"o": "SPU", "h": "MUC", "d": "17:05", "a": "18:30", "al": "Lufthansa", "t": "1h25", "p": 254}, {"o": "SPU", "h": "FRA", "d": "18:50", "a": "20:40", "al": "Discover", "t": "1h50", "p": 279}, {"o": "SPU", "h": "ZRH", "d": "21:05", "a": "22:40", "al": "Edelweiss", "t": "1h35", "p": 270}, {"o": "ZAG", "h": "FRA", "d": "06:05", "a": "07:40", "al": "Lufthansa", "t": "1h35", "p": 230}, {"o": "ZAG", "h": "MUC", "d": "06:15", "a": "07:25", "al": "Lufthansa", "t": "1h10", "p": 168}, {"o": "ZAG", "h": "BRU", "d": "06:50", "a": "08:40", "al": "Croatia Airlines", "t": "1h50", "p": 270}, {"o": "ZAG", "h": "FRA", "d": "07:40", "a": "09:15", "al": "Croatia Airlines / Lufthansa", "t": "1h35", "p": 234}, {"o": "ZAG", "h": "MUC", "d": "08:15", "a": "09:30", "al": "Croatia Airlines / Lufthansa", "t": "1h15", "p": 145}, {"o": "ZAG", "h": "AMS", "d": "08:25", "a": "10:30", "al": "Croatia Airlines", "t": "2h05", "p": 366}, {"o": "ZAG", "h": "CDG", "d": "09:00", "a": "11:05", "al": "Croatia Airlines / Air France", "t": "2h05", "p": 507}, {"o": "ZAG", "h": "FRA", "d": "09:05", "a": "10:40", "al": "Croatia Airlines / Lufthansa", "t": "1h35", "p": 322}, {"o": "ZAG", "h": "ZRH", "d": "09:25", "a": "10:45", "al": "Croatia Airlines / SWISS", "t": "1h20", "p": 566}, {"o": "ZAG", "h": "VIE", "d": "11:25", "a": "12:20", "al": "Austrian", "t": "55m", "p": 241}, {"o": "ZAG", "h": "CDG", "d": "12:30", "a": "14:45", "al": "Air France", "t": "2h15", "p": 243}, {"o": "ZAG", "h": "MUC", "d": "13:20", "a": "14:30", "al": "Lufthansa", "t": "1h10", "p": 212}, {"o": "ZAG", "h": "LHR", "d": "14:40", "a": "16:20", "al": "British Airways", "t": "2h40", "p": 145}, {"o": "ZAG", "h": "FRA", "d": "15:10", "a": "16:45", "al": "Lufthansa", "t": "1h35", "p": 230}, {"o": "ZAG", "h": "FCO", "d": "15:55", "a": "17:20", "al": "Ryanair", "t": "1h25", "p": 61}, {"o": "ZAG", "h": "MUC", "d": "17:40", "a": "18:55", "al": "Croatia Airlines / Lufthansa", "t": "1h15", "p": 171}, {"o": "ZAG", "h": "VIE", "d": "17:50", "a": "18:45", "al": "Croatia Airlines / Austrian", "t": "55m", "p": 259}, {"o": "ZAG", "h": "LHR", "d": "17:50", "a": "19:15", "al": "Croatia Airlines", "t": "2h25", "p": 141}, {"o": "ZAG", "h": "FRA", "d": "17:55", "a": "19:30", "al": "Croatia Airlines / Lufthansa", "t": "1h35", "p": 322}, {"o": "ZAG", "h": "ZRH", "d": "18:00", "a": "19:20", "al": "Croatia Airlines / SWISS", "t": "1h20", "p": 429}, {"o": "ZAG", "h": "BRU", "d": "18:00", "a": "19:50", "al": "Croatia Airlines", "t": "1h50", "p": 270}];
+    const CITY = { DBV: 'Dubrovnik', SPU: 'Split', ZAG: 'Zagreb', FRA: 'Frankfurt', MUC: 'Munich', ZRH: 'Zurich', VIE: 'Vienna', BRU: 'Brussels', AMS: 'Amsterdam', LHR: 'London Heathrow', CDG: 'Paris CDG', FCO: 'Rome' };
+    const NOTE = { DBV: '30 min away', SPU: '~3 h drive', ZAG: 'fly/drive the day before' };
+    const sameDay = f => f.a <= '10:45';
+    const PICKS = new Set(['DBV-FRA-07:30', 'DBV-VIE-08:40', 'DBV-MUC-17:05', 'DBV-FRA-18:55']);
+    const state = { o: 'DBV', same: false };
+    const gf = f => `https://www.google.com/travel/flights?q=${encodeURIComponent(`Flights from ${f.o} to ${f.h} on 2026-10-19 one way nonstop`)}&curr=USD&hl=en`;
+    const heads = [...document.querySelectorAll('#fl-table thead th')].map(th => th.textContent.trim());
+    function render() {
+      const opts = [['ALL', 'All airports'], ['DBV', 'Dubrovnik · 30 min'], ['SPU', 'Split · ~3 h drive'], ['ZAG', 'Zagreb · day before']];
+      document.getElementById('fl-filters').innerHTML = opts.map(([k, l]) => `<button data-o="${k}" class="${state.o === k ? '' : 'off'}">${l}</button>`).join('')
+        + `<button data-same="1" class="${state.same ? '' : 'off'}">☀️ Same-day only</button>`;
+      document.querySelectorAll('#fl-filters [data-o]').forEach(b => b.onclick = () => { state.o = b.dataset.o; render(); });
+      document.querySelector('#fl-filters [data-same]').onclick = () => { state.same = !state.same; render(); };
+      const rows = FL.filter(f => (state.o === 'ALL' || f.o === state.o) && (!state.same || sameDay(f)))
+        .sort((x, y) => x.d.localeCompare(y.d) || x.p - y.p);
+      const minP = Math.min(...rows.map(r => r.p));
+      document.querySelector('#fl-table tbody').innerHTML = rows.map(f => {
+        const pick = PICKS.has(`${f.o}-${f.h}-${f.d}`);
+        return `<tr${pick ? ' style="background:rgba(212,106,76,.10)"' : ''}>
+          <td><strong>${CITY[f.o]}</strong><br><span class="tiny">${NOTE[f.o]}</span></td>
+          <td><strong>${CITY[f.h]}</strong> <span class="tiny">${f.h}</span>${pick ? ' <span class="tag" style="font-size:10px">★ pick</span>' : ''}</td>
+          <td>${f.d} → ${f.a}</td><td>${f.al}</td><td>${f.t}</td>
+          <td><strong${f.p === minP ? ' style="color:var(--accent-2)"' : ''}>$${f.p}</strong></td>
+          <td>${sameDay(f) ? '☀️ Same day' : '🌙 Overnight'}</td>
+          <td><a href="${gf(f)}" target="_blank" rel="noopener">Google Flights ↗</a></td></tr>`;
+      }).join('') || '<tr><td colspan="8">No flights match.</td></tr>';
+      document.querySelectorAll('#fl-table tbody tr').forEach(tr => [...tr.children].forEach((td, i) => heads[i] && td.setAttribute('data-label', heads[i])));
+    }
+    render();
+  })();
+  </script>
 
   <section id="priorities" class="slide">
     <div class="slide-inner">
